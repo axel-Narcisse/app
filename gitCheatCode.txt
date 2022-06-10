@@ -1,0 +1,31 @@
+Verifier qu'on a bien toute les branches
+     git fetch --all
+
+Vérifier la branch de départ (ici "dev")
+    git checkout dev
+
+Faire un pull => notre branche Dev est a jour
+    git pull
+
+Créer la branche 
+    git checkout -b NomDeLaBranche
+
+#dev 
+    modification des fichiers en fonction de la demande client
+
+verifier les fichiers modifié
+    git status
+
+validation des modifications (staged modification)
+    git add -all
+
+ajouter le message de commit
+
+    git commit -m "Message de commit"
+
+push le commit sur le repo a distance 
+
+    git push
+
+si la branche n'est pas sur le repo (nouvelle branche)
+  git push --set-upstream origin NomDeLaBranche
