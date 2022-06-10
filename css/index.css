@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    background: coral;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+
+h1{
+    text-transform: uppercase;
+}
+
+.logo{
+    height: 300px;
+    width: auto;
+}
+
+.linkPage{
+    margin: 20px 0;
+}
+
+.contenerLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .contenerLogo{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+  }
