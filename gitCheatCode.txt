@@ -11,13 +11,13 @@ Créer la branche
     git checkout -b NomDeLaBranche
 
 #dev 
-    modification des fichiers en fonction de la demande client
+modification des fichiers en fonction de la demande client
 
 verifier les fichiers modifié
     git status
 
-validation des modifications (staged modification)
-    git add -all
+validation des modifications (staged modification) ici ajout du fichier gitCheatCode.txt
+    git add gitCheatCode.txt
 
 ajouter le message de commit
 
