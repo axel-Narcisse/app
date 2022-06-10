@@ -1,0 +1,41 @@
+
+#checkbox{
+    display: none;
+}
+.hamburger{
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.line {
+    position: absolute;
+    width: 21px;
+    height: 2px;
+    background-color: white;
+    border-radius: 3px;
+    transition: transform .25s, opacity .35s;
+}
+
+.line--top{
+    transform: translateY(-7px);
+}
+
+.line--bottom{
+    transform: translateY(7px);
+}
+
+#checkbox:checked~.line--top{
+    transform: rotate(45deg);
+}
+
+#checkbox:checked~.line--middle{
+    transform: rotate(16px);
+    opacity: 0;
+}
+
+#checkbox:checked~.line--bottom{
+    transform: rotate(-45deg);
+}
