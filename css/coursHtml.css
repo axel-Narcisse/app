@@ -43,7 +43,7 @@ h1{
 
 .structureHtml article{
     display: inline-block;
-    width: 44%;
+    width: 70%;
     vertical-align: bottom;
     height: 240px;
     border: solid 5px rgb(151, 10, 151) ;
@@ -60,7 +60,7 @@ h1{
 
 .structureHtml .inside{
     display: inline-block;
-    width: 40%;
+    width: 25%;
     height: 240px;
     border: solid 5px rgb(219, 158, 27) ;
 }
