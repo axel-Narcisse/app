@@ -42,6 +42,10 @@ h1{
 
 
 .structureHtml article{
+    display: inline-block;
+    width: 44%;
+    vertical-align: bottom;
+    height: 240px;
     border: solid 5px rgb(151, 10, 151) ;
 }
 
@@ -55,6 +59,9 @@ h1{
 }
 
 .structureHtml div{
+    display: inline-block;
+    width: 40%;
+    height: 240px;
     border: solid 5px rgb(219, 158, 27) ;
 }
 
