@@ -1,6 +1,9 @@
 Verifier qu'on a bien toute les branches
      git fetch --all
 
+Voir toute les branches sur le repo
+    git branch -r
+
 Vérifier la branch de départ (ici "dev")
     git checkout dev
 
