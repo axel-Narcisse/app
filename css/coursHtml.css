@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+.element{
+    color: red;
+    border: red 1px solid;
+    font-weight: bold;
+}
+
+.description{
+color: blue;
+border: blue 1px solid;
+}
+
 header{
     display: flex;
     justify-content: space-around;
@@ -71,4 +82,13 @@ h1{
 
 .structureHtml .contener{
     display: flex;
+}
+
+.elementDescriptionHtml div{
+    display: flex;
+
+}
+
+.elementDescriptionHtml p{
+    padding: 9px;
 }
