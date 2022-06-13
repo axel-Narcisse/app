@@ -16,35 +16,49 @@ h1{
     color: white;
 }
 
-.structureHtml header{
-    border: solid 5px greenyellow ;
+.structureHtml{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.structureHtml *{
     border-radius: 5px;
+    background: none;
+    padding: 5px;
+    margin: 9px;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.structureHtml header{
+    border: solid 5px rgb(36, 192, 75) ;
+    display: block;
+
 }
 
 .structureHtml nav{
-    border-radius: 5px;
-    border: solid 5px rosybrown ;
+    border: solid 5px rgb(240, 114, 219) ;
 }
 
 
 .structureHtml article{
-    border-radius: 5px;
     border: solid 5px rgb(151, 10, 151) ;
+}
+
+.structureHtml section{
+    border: solid 5px rgb(182, 20, 20) ;
 }
 
 
 .structureHtml footer{
-    border-radius: 5px;
     border: solid 5px rgb(231, 235, 7) ;
 }
 
 .structureHtml div{
-    border-radius: 5px;
     border: solid 5px rgb(219, 158, 27) ;
 }
 
 .structureHtml aside{
-    border-radius: 5px;
     border: solid 5px rgb(14, 215, 230) ;
 }
 
