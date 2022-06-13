@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cours Css</title>
+    <title>Cours CSS</title>
     <link rel="stylesheet" href="../css/coursCss.css">
     <link rel="stylesheet" href="../css/burgerMenu.css">
     <link rel="stylesheet" href="../css/iconHome.css">
@@ -18,8 +18,8 @@
                 <div class="home-door"></div>
                 <div class="home-chimney" style="background-color: #fff"></div>
                 <div class="home-roof-container">
-                  <div class="home-roof-left" style="background-color: #fff"></div>
-                  <div class="home-roof-right" style="background-color: #fff"></div>
+                <div class="home-roof-left" style="background-color: #fff"></div>
+                <div class="home-roof-right" style="background-color: #fff"></div>
                 </div>
               </div>
         </a>
@@ -31,7 +31,6 @@
             <span class="line line--middle"></span>
             <span class="line line--bottom"></span>
         </label>
-
         <nav>
             <ul>
                 <li>
@@ -53,13 +52,649 @@
                     <a href="#sousMenuHeader">Sous Menu Header</a>
                 </li>
                 <li>
-                    <a href="#flex">Flex</a>
+                    <a href="#grid">Grid</a>
                 </li>                
             </ul>
         </nav>
     </header>
-<body>
 
+    <main>
+        <section id="lesSelecteursCss">
+            <details>
+                <summary>
+                    <h5 class="selecteur">Element html </h5>
+                </summary>
+                    <div class="example"><strong>div {}</strong> selects all <span class="tag">div</span> elements.</div>
+                    <p class="description"> <span class="selector">Tag</span>  Selects all elements of type A. Type refers to the type of tag, so div, p and ul are all different element types. </p>
+            </details>   
+
+            <details>
+                <summary>
+                    <h5 class="selecteur">ID </h5>
+                </summary>
+                    <div class="example">
+                        <strong>#cool {}</strong> 
+                        Ce selecteur sélectionne l'unique élement :  
+                        <span class="tag">ul id="cool"</span> 
+                        <span class="tag">/ul</span> 
+                    </div>
+                    <p class="description">
+                        <span class="selector">#id</span>
+                        Selects the element with a specific id. You can also combine the ID selector with the type selector. 
+                    </p>
+            </details>   
+
+            	
+            <details>
+                <summary>
+                    <h5 class="selecteur">.class1</h5>
+                </summary>
+                    <div class="example">
+                        <strong>.name1 {}</strong> 
+                        Ce selecteur sélectionne les élements suivants :
+                        <div class="codeContainer">
+                            <span class="tag">div class=".name1"</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">.class1</span>
+                        Selectionne tous les élements avec la class="class1"  </p>
+            </details>   
+
+
+            <details>
+                <summary>
+                    <h5 class="selecteur">Double class </h5>
+                </summary>
+                    <div class="example"><strong>.cool.fun { #parametreCss}</strong> selects the unique <span class="tag">section class="cool fun"</span><span class="tag">/section</span>elements.</div>
+                    <p class="description"> <span class="selector">.class1.class2</span>Selects the element with a specific id. You can also combine the ID selector with the type selector. </p>
+            </details>   
+            	
+            <details>
+                <summary>
+                    <h5 class="selecteur">.class1 .class2</h5>
+                </summary>
+                    <div class="example">
+                        <strong>.name1 .name2 {}</strong> 
+                        Ce selecteur sélectionne l'unique élement :
+                        <div class="codeContainer">
+                            <span class="tag">ul class=".name1"</span> 
+                            <span class="tag">li class=".name2"</span> 
+                            <span class="tag">/li</span> 
+                            <span class="tag">/ul</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">.class1 .class2</span>
+                        Selects all elements with name2 that is a descendant of an element with name1  </p>
+            </details>   
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element.class</h5>
+                </summary>
+                    <div class="example">
+                       <p>Ce selecteur sélectionne l' élement :<strong>p.intro	{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p class=".intro"</span> 
+                            <span class="tag">/p</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">p .intro</span>Sélectionne tous les élements<span class="tag">p</span>avec la class="intro"
+                    </p>
+            </details>
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+            <!-- h5= "element.class"	example= "p.intro"  codeContainer="a toi de le faire"  description p="Selects all <p> elements with class="intro" " -->
+            <details>
+                <summary>
+                    <h5 class="selecteur">element>element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div > p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">div</span> 
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div > p</span>Sélectionne tous les élements<span class="tag">p</span> enfant de <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- element+element	div + p	Selects the first <p> element that is placed immediately after <div> elements -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- element1~element2	p ~ ul	Selects every <ul> element that is preceded by a <p> element -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- [attribute]	[target]	Selects all elements with a target attribute -->
+        <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- [attribute=value]	[target=_blank]	Selects all elements with target="_blank" -->
+        <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- [attribute~=value]	[title~=flower]	Selects all elements with a title attribute containing the word "flower" -->
+        <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- [attribute|=value]	[lang|=en]	Selects all elements with a lang attribute value equal to "en" or starting with "en-" -->
+        <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- [attribute^=value]	a[href^="https"]	Selects every <a> element whose href attribute value begins with "https" -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- [attribute$=value]	a[href$=".pdf"]	Selects every <a> element whose href attribute value ends with ".pdf" -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- [attribute*=value]	a[href*="w3schools"]	Selects every <a> element whose href attribute value contains the substring "w3schools" -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- ::after	p::after	Insert something after the content of each <p> element -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- ::before	p::before	Insert something before the content of each <p> element -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :checked	input:checked	Selects every checked <input> element -->
+        <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :default	input:default	Selects the default <input> element -->
+        <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :disabled	input:disabled	Selects every disabled <input> element -->
+        <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :first-child	p:first-child	Selects every <p> element that is the first child of its parent -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- ::first-letter	p::first-letter	Selects the first letter of every <p> element -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- ::first-line	p::first-line	Selects the first line of every <p> element -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :first-of-type	p:first-of-type	Selects every <p> element that is the first <p> element of its parent -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :hover	a:hover	Selects links on mouse over -->
+        <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :last-child	p:last-child	Selects every <p> element that is the last child of its parent -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :not(selector)	:not(p)	Selects every element that is not a <p> element -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :nth-last-child(n)	p:nth-last-child(2)	Selects every <p> element that is the second child of its parent, counting from the last child -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :nth-of-type(n)	p:nth-of-type(2)	Selects every <p> element that is the second <p> element of its parent -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+                <!-- :only-child	p:only-child	Selects every <p> element that is the only child of its parent -->
+            <details>
+                <summary>
+                    <h5 class="selecteur"> element,element</h5>
+                </summary>
+                    <div class="example">
+                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <div class="codeContainer">
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
+                        </div>  
+                    </div>
+                    <p class="description">
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                    </p>
+            </details>
+            <!--  -->
+        </section>
+        <article id="parametreCss"></article>
+        <article id="flex"></article>
+        <article id="hoverClick"></article>
+        <article id="backgroundImg"></article>
+        <article id="sousMenuHeader"></article>
+        <article id="backgroundImg"></article>
+        <article id="grid"></article>
+
+    </main>
+<body>
     
 </body>
 </html>
