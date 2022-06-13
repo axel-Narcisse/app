@@ -10,3 +10,29 @@ header{
     padding: 20px 0;
     margin-bottom: 20px;
 }
+
+.tag{
+    position: relative;
+    padding: 0 14px;
+}
+
+.tag:before {
+    content: "<";
+    position: absolute;
+    left: 2px;
+    bottom:-3px;
+}
+
+.tag:after {
+    content: ">";
+    position: absolute;
+    right: 2px;
+    bottom: -3px;
+}
+
+.selector{
+    font-weight: bolder;
+    color: red;
+    font-size: 1.2em;
+    margin: 0 9px;
+}
