@@ -3,17 +3,6 @@
     padding: 0;
 }
 
-.element{
-    color: red;
-    border: red 1px solid;
-    font-weight: bold;
-}
-
-.description{
-color: blue;
-border: blue 1px solid;
-}
-
 header{
     display: flex;
     justify-content: space-around;
@@ -26,6 +15,58 @@ h1{
     text-transform: uppercase;
     color: white;
 }
+
+h5{
+    display: inline-block;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 30%;
+    margin: 9px;
+    padding: 9px;
+}
+
+summary {
+    font-weight: bold;
+    margin: 9px 9px 0;
+    padding: 9px;
+}
+
+details[open] {
+    padding: 9px;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 9px;
+}
+
+
+.description{
+    color: blue;
+}
+
+.element{
+    color: red;
+    font-weight: bold;
+}
+
+.logoHtml{
+    width: 70px;
+}
+
+.titleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 40px;
+    padding: 11px;
+}
+
 
 .structureHtml{
     width: 50%;
@@ -84,9 +125,9 @@ h1{
     display: flex;
 }
 
-.elementDescriptionHtml div{
+.elementDescriptionHtml{
     display: flex;
-
+    flex-wrap: wrap;
 }
 
 .elementDescriptionHtml p{
