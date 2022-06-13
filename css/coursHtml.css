@@ -58,7 +58,7 @@ h1{
     border: solid 5px rgb(231, 235, 7) ;
 }
 
-.structureHtml div{
+.structureHtml .inside{
     display: inline-block;
     width: 40%;
     height: 240px;
@@ -69,3 +69,6 @@ h1{
     border: solid 5px rgb(14, 215, 230) ;
 }
 
+.structureHtml .contener{
+    display: flex;
+}
