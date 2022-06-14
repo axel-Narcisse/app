@@ -59,9 +59,10 @@
     </header>
     <main>       
         <section id="lesSelecteursCss">
+            <h2>Les sélecteurs CSS</h2>
             <details>
                 <summary>
-                    <h5 class="selecteur">Element html </h5>
+                    <h3 class="selecteur">Element html </h3>
                 </summary>
                     <div class="example"><strong>div {}</strong> selects all <span class="tag">div</span> elements.</div>
                     <p class="description"> <span class="selector">Tag</span>  Selects all elements of type A. Type refers to the type of tag, so div, p and ul are all different element types. </p>
@@ -386,19 +387,31 @@
 
     
         <article id="parametreCss">
+            <h2>Les different parametre Css</h2>
 
-            <h3>Cours Css</h3> 
-            <h4>Les different parametre Css</h4>
-
+            <section class="paramContainer">
+                <h3>display</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>none</h4>
+                        <p>Utiliser la propriété display avec la valeur none sur un élément entraînera son retrait de l'arbre d'accessibilité. Cet élément ainsi que ses descendants ne seront plus annoncés par les lecteurs d'écrans.</p>
+                    </div>
+                    <div>
+                        <h4>block</h4>
+                        <p>Les balises s'affichant en "block" (bloc) : elles prennent toute la largeur disponible et s'affichent avec un saut de ligne avant et après. Les balises s'affichant en "inline" (dans la ligne) : elles prennent uniquement la largeur dont elles ont besoin, sans ajouter de saut de ligne.</p>
+                    </div>
+                    <div>
+                        <h4>inline-block</h4>
+                        <p>Par défaut les éléments input ont comme valeur de display celle de inline-block. C'est pour cela que l'utilisation de ces éléments HTML sont simples : ils restent à côté de votre label associé, et vous pouvez en changer sa largeur, sa hauteur, ses marges, son alignement vertical, etc.</p>
+                    </div>
+                    <div>
+                        <h4>flex</h4>
+                        <p>La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur.</p>
+                    </div>
+                </div>
+            </section>
             
-            <p> <span class="colorRed">display : none;</span>Utiliser la propriété display avec la valeur none sur un élément entraînera son retrait de l'arbre d'accessibilité. Cet élément ainsi que ses descendants ne seront plus annoncés par les lecteurs d'écrans.</p>
 
-            <p> <span class="colorRed"> display: inline-block</span>Par défaut les éléments input ont comme valeur de display celle de inline-block. C'est pour cela que l'utilisation de ces éléments HTML sont simples : ils restent à côté de votre label associé, et vous pouvez en changer sa largeur, sa hauteur, ses marges, son alignement vertical, etc.</p>
-
-             <p> <span class="colorRed">display : block</span> Les balises s'affichant en "block" (bloc) : elles prennent toute la largeur disponible et s'affichent avec un saut de ligne avant et après. Les balises s'affichant en "inline" (dans la ligne) : elles prennent uniquement la largeur dont elles ont besoin, sans ajouter de saut de ligne.</p>
-
-            <p> <span class="colorRed">display : flex</span> La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur.</p>
- 
             <p> <span class="colorRed">Position :Relative </span> L'élément est positionné dans le flux normal du document puis décalé, par rapport à lui-même, selon les valeurs fournies par top, right, bottom et left. Le décalage n'a pas d'impact sur la position des éléments. Aussi, l'espace fourni à l'élément sur la page est le même que celui fourni avec static. </p>
 
             <p> <span class="colorRed">Position : Absolute</span> L'élément est retiré du flux normal et aucun espace n'est créé pour l'élément sur la page. Il est ensuite positionné par rapport à son ancêtre le plus proche qui est positionné s'il y en a un ou par rapport au bloc englobant initial sinon. La position finale de l'élément est déterminée par les valeurs de top, right, bottom et left.</p>

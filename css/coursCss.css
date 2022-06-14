@@ -36,3 +36,19 @@ header{
     font-size: 1.2em;
     margin: 0 9px;
 }
+
+/* parametre CSS */
+
+.paramContainer h5{
+    text-align: center;
+}
+
+.propsContainer{
+    display: flex;
+}
+
+.propsContainer div{
+    margin:0 9px;
+    border: solid black 1px;
+    padding: 9px;
+}
