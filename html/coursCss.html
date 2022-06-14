@@ -161,31 +161,33 @@
                         <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
                     </p>
             </details>
-            <!-- h5= "element.class"	example= "p.intro"  codeContainer="a toi de le faire"  description p="Selects all <p> elements with class="intro" " -->
             <details>
                 <summary>
-                    <h5 class="selecteur">element>element</h5>
+                    <h5 class="selecteur">element+element</h5>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div > p{}</strong></p> 
+                        <p>Ce selecteur sélectionne le premier element p qui a div pour parent :<strong>p+div{}</strong></p> 
                         <div class="codeContainer">
-                            <span class="tag">div</span> 
                             <span class="tag">p</span> 
                             <span class="tag">/p</span> 
+                            <span class="tag">div</span> 
                             <span class="tag">/div</span> 
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">div > p</span>Sélectionne tous les élements<span class="tag">p</span> enfant de <span class="tag">div</span>
+                        <span class="selector">p+div</span>Sélectionne tous les élements<span class="tag">p</span> pour parent <span class="tag">div</span>
                     </p>
             </details>
-                <!-- element+element	div + p	Selects the first <p> element that is placed immediately after <div> elements -->
+
+
+
+
             <details>
                 <summary>
                     <h5 class="selecteur"> element,element</h5>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <p>Ce selecteur sélectionne l' élement :<strong>div , p{}</strong></p> 
                         <div class="codeContainer">
                             <span class="tag">p</span> 
                             <span class="tag">/p</span> 
@@ -197,7 +199,13 @@
                         <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
                     </p>
             </details>
-                <!-- element1~element2	p ~ ul	Selects every <ul> element that is preceded by a <p> element -->
+-           <!-- element1~element2	p ~ ul	Selects every <ul> element that is preceded by a <p> element -->
+
+
+
+
+
+    
             <details>
                 <summary>
                     <h5 class="selecteur"> element,element</h5>
@@ -344,10 +352,10 @@
                 <!-- ::after	p::after	Insert something after the content of each <p> element -->
             <details>
                 <summary>
-                    <h5 class="selecteur"> element,element</h5>
+                    <h5 class="selecteur"> ::after</h5>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <p>Insérez quelque chose après le contenu de chaque élément p :<strong>p::after{}</strong></p> 
                         <div class="codeContainer">
                             <span class="tag">p</span> 
                             <span class="tag">/p</span> 
@@ -356,25 +364,22 @@
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                        <span class="selector">p::after</span>Sélectionne tous les élements suivis par <span class="tag">p</span> et <span class="tag"></span>
                     </p>
             </details>
-                <!-- ::before	p::before	Insert something before the content of each <p> element -->
             <details>
                 <summary>
-                    <h5 class="selecteur"> element,element</h5>
+                    <h5 class="selecteur"> :checked</h5>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <p>Ce selecteur sélectionne l' élement :<strong>input:checked{}</strong></p> 
                         <div class="codeContainer">
-                            <span class="tag">p</span> 
-                            <span class="tag">/p</span> 
-                            <span class="tag">div</span> 
-                            <span class="tag">/div</span> 
+                            <span class="tag">input</span> 
+                            <span class="tag">/input</span> 
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                        <span class="selector">input:checked</span>Sélectionne chaque élément <span class="tag">input</span>
                     </p>
             </details>
                 <!-- :checked	input:checked	Selects every checked <input> element -->
