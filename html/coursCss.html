@@ -59,10 +59,9 @@
     </header>
     <main>       
         <section id="lesSelecteursCss">
-            <h2>Les sélecteurs CSS</h2>
             <details>
                 <summary>
-                    <h3 class="selecteur">Element html </h3>
+                    <h5 class="selecteur">Element html </h5>
                 </summary>
                     <div class="example"><strong>div {}</strong> selects all <span class="tag">div</span> elements.</div>
                     <p class="description"> <span class="selector">Tag</span>  Selects all elements of type A. Type refers to the type of tag, so div, p and ul are all different element types. </p>
@@ -366,8 +365,7 @@
                     <p class="description">
                         <span class="selector">:last-child</span>Sélectionne le dernier enfants de<span class="tag">p</span>
                     </p>
-            </details>           
-            
+            </details>          
             <details>
                 <summary>
                     <h5 class="selecteur"> :only-child</h5>
@@ -387,31 +385,18 @@
 
     
         <article id="parametreCss">
-            <h2>Les different parametre Css</h2>
 
-            <section class="paramContainer">
-                <h3>display</h3>
-                <div class="propsContainer">
-                    <div>
-                        <h4>none</h4>
-                        <p>Utiliser la propriété display avec la valeur none sur un élément entraînera son retrait de l'arbre d'accessibilité. Cet élément ainsi que ses descendants ne seront plus annoncés par les lecteurs d'écrans.</p>
-                    </div>
-                    <div>
-                        <h4>block</h4>
-                        <p>Les balises s'affichant en "block" (bloc) : elles prennent toute la largeur disponible et s'affichent avec un saut de ligne avant et après. Les balises s'affichant en "inline" (dans la ligne) : elles prennent uniquement la largeur dont elles ont besoin, sans ajouter de saut de ligne.</p>
-                    </div>
-                    <div>
-                        <h4>inline-block</h4>
-                        <p>Par défaut les éléments input ont comme valeur de display celle de inline-block. C'est pour cela que l'utilisation de ces éléments HTML sont simples : ils restent à côté de votre label associé, et vous pouvez en changer sa largeur, sa hauteur, ses marges, son alignement vertical, etc.</p>
-                    </div>
-                    <div>
-                        <h4>flex</h4>
-                        <p>La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur.</p>
-                    </div>
-                </div>
-            </section>
+            <h4>Les different parametre Css</h4>
+
             
+            <p> <span class="colorRed">display : none;</span>Utiliser la propriété display avec la valeur none sur un élément entraînera son retrait de l'arbre d'accessibilité. Cet élément ainsi que ses descendants ne seront plus annoncés par les lecteurs d'écrans.</p>
 
+            <p> <span class="colorRed"> display: inline-block</span>Par défaut les éléments input ont comme valeur de display celle de inline-block. C'est pour cela que l'utilisation de ces éléments HTML sont simples : ils restent à côté de votre label associé, et vous pouvez en changer sa largeur, sa hauteur, ses marges, son alignement vertical, etc.</p>
+
+             <p> <span class="colorRed">display : block</span> Les balises s'affichant en "block" (bloc) : elles prennent toute la largeur disponible et s'affichent avec un saut de ligne avant et après. Les balises s'affichant en "inline" (dans la ligne) : elles prennent uniquement la largeur dont elles ont besoin, sans ajouter de saut de ligne.</p>
+
+            <p> <span class="colorRed">display : flex</span> La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur.</p>
+ 
             <p> <span class="colorRed">Position :Relative </span> L'élément est positionné dans le flux normal du document puis décalé, par rapport à lui-même, selon les valeurs fournies par top, right, bottom et left. Le décalage n'a pas d'impact sur la position des éléments. Aussi, l'espace fourni à l'élément sur la page est le même que celui fourni avec static. </p>
 
             <p> <span class="colorRed">Position : Absolute</span> L'élément est retiré du flux normal et aucun espace n'est créé pour l'élément sur la page. Il est ensuite positionné par rapport à son ancêtre le plus proche qui est positionné s'il y en a un ou par rapport au bloc englobant initial sinon. La position finale de l'élément est déterminée par les valeurs de top, right, bottom et left.</p>
@@ -445,10 +430,105 @@
 
         <article id="flex">
 
+            <h3>Cours Css</h3> 
+            <h4>A quoi sert Flex ?</h4>
+
+            <p>La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur. Les propriétés détaillées correspondantes à cette propriété raccourcie sont flex-grow, flex-shrink et flex-basis. Les éléments flexibles peuvent être étirés ou réduits pour utiliser un espace proportionnel à leur coefficient de grossissement ou de rétrécissement afin de ne pas dépasser d'un conteneur.</p>
+
+            <h5>L'axe principal</h5>
+
+            <ul>L'axe principal est défini par la propriété  flex-direction qui peut prendre quatre valeurs :
+                <li>row</li>
+                <li>row-reverse</li>
+                <li>column</li>
+                <li>column-reverse</li>
+             </ul>
+
+
+             <h5>L'axe secondaire (cross axis)</h5>
+
+            <p>L'axe secondaire est perpendiculaire à l'axe principal. Ainsi, si flex-direction vaut row ou row-reverse, l'axe secondaire suivra l'axe des colonnes.</p>
+
+            <p>Si l'axe principale est column ou column-reverse, l'axe secondaire suivra celui des lignes (horizontales)
+            </p>
+
+            <h4>les Valeur</h4>
+
+            <h6>Valeurs row</h6>
+
+            <p>Si on choisit la valeur row ou row-reverse, l'axe principal sera aligné avec la direction « en ligne » (inline direction) (c'est la direction logique qui suit le sens d'écriture du document).</p>
+
+            <h6>Valeurs Column</h6>
+            <p>Si on choisit la valeur column ou column-reverse, l'axe principal suivra la direction de bloc (block direction) et progressera le long de l'axe perpendiculaire au sens d'écriture.</p>
+
+            
+            <h4>Flex-Wrap</h4>
+
+            <h5>Créer un conteneur flexible sur plusieurs lignes avec flex-wrap</h5>
+
+            <p>Pour obtenir ce « passage à la ligne », on ajoute la propriété flex-wrap avec la valeur wrap. Désormais, si les éléments sont trop grands pour tenir sur une seule ligne, ils passeront sur une autre ligne. L'exemple suivant illustre le résultat obtenu lorsque la somme des tailles des éléments dépasse celle du conteneur. Avec flex-wrap qui vaut wrap, les éléments passent à la ligne. Si on modifie la valeur avec nowrap (qui correspond à la valeur initiale), les éléments seront rétrécis pour tenir sur une ligne (car les valeurs initiales des boîtes flexibles permettent aux éléments d'être ainsi redimensionnés). Si on utilise nowrap et que les éléments ne peuvent pas être redimensionnés (ou pas suffisamment), cela causera un dépassement.</p>
+
+            <h4>Alignement, justification et distribution de l'espace disponible entre les éléments</h4>
+
+            <p>Une fonctionnalité majeure des boîtes flexibles est de permettre l'alignement et la justification des éléments le long des axes principal et secondaire tout en distribuant l'espace entre les éléments flexibles.</p>
+
+            <h5>align-items</h5>
+
+            <p>La propriété align-items permet d'aligner les éléments le long de l'axe secondaire.</p>
+
+            <h5>justify-content</h5>
+
+            <p>La propriété justify-content est utilisée afin d'aligner les éléments le long de l'axe principal dans la direction définie par flex-direction. La valeur initiale est flex-start qui place les éléments à partir de la ligne de début du conteneur sur l'axe principal. La valeur flex-end permet de les placer vers la fin et la valeur center permet de les centrer le long de l'axe principal.</p>
+        </article>
+
+        <article id="hoverClick">
+
+            <h2>A quoi nous sert :hover ?</h2>
+
+            <p>La pseudo-classe :hover permet de spécifier l'apparence d'un élément au moment où l'utilisateur le survole avec le pointeur, sans nécessairement l'activer.</p>
+
+            <p>La mise en forme ciblée par cette pseudo-classe peut être surchargée par d'autres pseudo-classes relatives aux liens hypertextes comme :link, :visited, et :active, apparaissant dans des règles subséquentes. Pour décorer les liens sans effet de bord problématique, on placera la règle :hover après les règles :link et :visited mais avant la règle :active (l'ordre est :link — :visited — :hover — :active – un moyen mnémotechnique est de se souvenir des initiales LVHA) tandis que l'ordre de la règle :focus est indifférent.</p>
+
+            <p>La pseudo-classe :hover peut être appliquée à n'importe quel pseudo-élément.</p> 
 
         </article>
-        <article id="hoverClick"></article>
-        <article id="backgroundImg"></article>
+        <article id="backgroundImg">
+
+            <h2>A quoi nous sert le background-image?</h2>
+
+            <p>La propriété d'Arrière-plan CSS background-image permet de mettre des ou une image d'arrière-plan ou un dégradé de couleur linéaire en arrière-plan ou un dégradé de couleur radial en arrière-plan. Par défaut, l'image d'arrière-plan ou le dégradé de couleur vont s'étendre sous les bordures</p>
+
+            <ul>La propriété de feuille de style background-image CSS peut prendre une/des valeurs suivantes :
+                <li>none : pas d'image ou de dégradé en arrière-plan, valeur par défaut.</li>
+                <li>url(url-image) : l'url de l'image d'arrière plan, peut être relative ou absolue.
+                    Le point de départ de l'url relative de l'image est l'endroit où se trouve la feuille de style background-image.</li>
+                <li>inherit : l'arrière plan ou fond hérite de la valeur du background-image de son parent (CSS2).</li>
+            </ul>
+
+            <h3>Définitions CSS annexes background-image</h3>
+
+            <p>background :</p>
+            <ol>
+                <li>La propriété d'Arrière-plan CSS BACKGROUND est un raccourci pour déclarer un ensemble de propriétés d'arrière plan (fond) en une seule fois.</li>
+            </ol>
+            <p>background-clip :</p>
+            <ol>
+                <li>La propriété d'Arrière-plan CSS BACKGROUND-CLIP permet de gérer les limites de la zone d'arrière plan à l'intérieur de l'élément.</li>
+            </ol>
+            <p>background-color :</p>
+            <ol>
+                <li>La propriété d'Arrière-plan CSS BACKGROUND-COLOR permet de spécifier la couleur de l'arrière plan ou couleur de fond d'un élément HTML ou XTHML.</li>
+            </ol>
+            <p>background-position :</p>
+            <ol>
+                <li>La propriété d'Arrière-plan CSS BACKGROUND-POSITION permet de positionner des ou une image (image de fond) au sein du même l'arrière-plan.</li>
+            </ol>
+            <p>background-repeat :</p>
+            <ol>
+                <li>La propriété d'Arrière-plan CSS BACKGROUND-REPEAT permet de gérer la répétition horizontale ou/et verticale des ou de l'image d'arrière-plan.</li>
+            </ol>
+
+        </article>
         <article id="sousMenuHeader"></article>
         <article id="backgroundImg"></article>
         <article id="grid"></article>
