@@ -372,132 +372,41 @@
                 <!-- :last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent -->           
             <details>
                 <summary>
-                    <h5 class="selecteur"> element,element</h5>
+                    <h5 class="selecteur"> :nth-child(n)</h5>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <p>Ce selecteur sélectionne l' élement :<strong>p:last-child{}</strong></p> 
                         <div class="codeContainer">
                             <span class="tag">p</span> 
                             <span class="tag">/p</span> 
-                            <span class="tag">div</span> 
-                            <span class="tag">/div</span> 
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                        <span class="selector">:last-child</span>Sélectionne le dernier enfants de<span class="tag">p</span>
                     </p>
-            </details>
-                <!-- :nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent -->
+            </details>           
+            
             <details>
                 <summary>
-                    <h5 class="selecteur"> element,element</h5>
+                    <h5 class="selecteur"> :only-child</h5>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <p>Ce selecteur sélectionne l' élement :<strong>p:only-child{}</strong></p> 
                         <div class="codeContainer">
                             <span class="tag">p</span> 
-                            <span class="tag">/p</span> 
-                            <span class="tag">div</span> 
-                            <span class="tag">/div</span> 
+                            <span class="tag">/p</span>                             
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> qui n'ont pas de frère
                     </p>
             </details>
-                <!-- :nth-last-child(n)	p:nth-last-child(2)	Selects every <p> element that is the second child of its parent, counting from the last child -->
-            <details>
-                <summary>
-                    <h5 class="selecteur"> element,element</h5>
-                </summary>
-                    <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
-                        <div class="codeContainer">
-                            <span class="tag">p</span> 
-                            <span class="tag">/p</span> 
-                            <span class="tag">div</span> 
-                            <span class="tag">/div</span> 
-                        </div>  
-                    </div>
-                    <p class="description">
-                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
-                    </p>
-            </details>
-                <!-- :nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child -->
-            <details>
-                <summary>
-                    <h5 class="selecteur"> element,element</h5>
-                </summary>
-                    <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
-                        <div class="codeContainer">
-                            <span class="tag">p</span> 
-                            <span class="tag">/p</span> 
-                            <span class="tag">div</span> 
-                            <span class="tag">/div</span> 
-                        </div>  
-                    </div>
-                    <p class="description">
-                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
-                    </p>
-            </details>
-                <!-- :nth-of-type(n)	p:nth-of-type(2)	Selects every <p> element that is the second <p> element of its parent -->
-            <details>
-                <summary>
-                    <h5 class="selecteur"> element,element</h5>
-                </summary>
-                    <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
-                        <div class="codeContainer">
-                            <span class="tag">p</span> 
-                            <span class="tag">/p</span> 
-                            <span class="tag">div</span> 
-                            <span class="tag">/div</span> 
-                        </div>  
-                    </div>
-                    <p class="description">
-                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
-                    </p>
-            </details>
-                <!-- :only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent -->
-            <details>
-                <summary>
-                    <h5 class="selecteur"> element,element</h5>
-                </summary>
-                    <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
-                        <div class="codeContainer">
-                            <span class="tag">p</span> 
-                            <span class="tag">/p</span> 
-                            <span class="tag">div</span> 
-                            <span class="tag">/div</span> 
-                        </div>  
-                    </div>
-                    <p class="description">
-                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
-                    </p>
-            </details>
-                <!-- :only-child	p:only-child	Selects every <p> element that is the only child of its parent -->
-            <details>
-                <summary>
-                    <h5 class="selecteur"> element,element</h5>
-                </summary>
-                    <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
-                        <div class="codeContainer">
-                            <span class="tag">p</span> 
-                            <span class="tag">/p</span> 
-                            <span class="tag">div</span> 
-                            <span class="tag">/div</span> 
-                        </div>  
-                    </div>
-                    <p class="description">
-                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
-                    </p>
-            </details>
-            <!--  -->
-        </section>
-        <article id="parametreCss"></article>
+
+        
+
+        <article id="parametreCss">
+
+        </article>
         <article id="flex"></article>
         <article id="hoverClick"></article>
         <article id="backgroundImg"></article>
