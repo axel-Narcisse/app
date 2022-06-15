@@ -37,6 +37,21 @@ header{
     margin: 0 9px;
 }
 
+/* selecteur CSS */
+
+#selectorCssContainer section, #parametreCss .paramContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#selectorCssContainer details{
+    margin: 9px;
+    width: auto;
+    min-width: 100px;
+    border: solid 1px blue;
+    padding: 9px;
+}
+
 /* parametre CSS */
 
 .paramContainer h5{
