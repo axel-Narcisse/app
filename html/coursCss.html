@@ -405,41 +405,204 @@
                 </div>
             </section>
 
-
-            <p> <span class="colorRed"> display: inline-block</span>Par défaut les éléments input ont comme valeur de display celle de inline-block. C'est pour cela que l'utilisation de ces éléments HTML sont simples : ils restent à côté de votre label associé, et vous pouvez en changer sa largeur, sa hauteur, ses marges, son alignement vertical, etc.</p>
-
-             <p> <span class="colorRed">display : block</span> Les balises s'affichant en "block" (bloc) : elles prennent toute la largeur disponible et s'affichent avec un saut de ligne avant et après. Les balises s'affichant en "inline" (dans la ligne) : elles prennent uniquement la largeur dont elles ont besoin, sans ajouter de saut de ligne.</p>
-
-            <p> <span class="colorRed">display : flex</span> La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur.</p>
- 
-            <p> <span class="colorRed">Position :Relative </span> L'élément est positionné dans le flux normal du document puis décalé, par rapport à lui-même, selon les valeurs fournies par top, right, bottom et left. Le décalage n'a pas d'impact sur la position des éléments. Aussi, l'espace fourni à l'élément sur la page est le même que celui fourni avec static. </p>
-
-            <p> <span class="colorRed">Position : Absolute</span> L'élément est retiré du flux normal et aucun espace n'est créé pour l'élément sur la page. Il est ensuite positionné par rapport à son ancêtre le plus proche qui est positionné s'il y en a un ou par rapport au bloc englobant initial sinon. La position finale de l'élément est déterminée par les valeurs de top, right, bottom et left.</p>
-
-            <p> <span class="colorRed">Position : Static</span> Comportement normal (par défaut). L'élément est alors positionné dans le flux avec sa position. Les propriétés top, right, bottom, left et z-index ne s'appliquent pas. </p>
-
-            <p> <span class="colorRed">border : Solid 1px red</span> Je demande simplement une bordure de 1px rouge style solide. </p>
+            <section class="paramContainer">
+                <h3>Position</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>Relative</h4>
+                        <p>L'élément est positionné dans le flux normal du document puis décalé, par rapport à lui-même, selon les valeurs fournies par top, right, bottom et left. Le décalage n'a pas d'impact sur la position des éléments. Aussi, l'espace fourni à l'élément sur la page est le même que celui fourni avec static.</p>
+                    </div>
+                    <div>
+                        <h4>Absolute</h4>
+                        <p>L'élément est retiré du flux normal et aucun espace n'est créé pour l'élément sur la page. Il est ensuite positionné par rapport à son ancêtre le plus proche qui est positionné s'il y en a un ou par rapport au bloc englobant initial sinon. La position finale de l'élément est déterminée par les valeurs de top, right, bottom et left.</p>
+                    </div>
+                    <div>
+                        <h4>Static</h4>
+                        <p>Comportement normal (par défaut). L'élément est alors positionné dans le flux avec sa position. Les propriétés top, right, bottom, left et z-index ne s'appliquent pas. </p>
+                    </div>
+                    <div>
+                        <h4>Sticky</h4>
+                        <p>Un élément positionné de manière "Sticky" est un élément dont la valeur de position calculée est "Sticky". Il est traité comme relativement positionné jusqu'à ce que son bloc contenant franchisse un seuil spécifié (par exemple, définir top sur une valeur autre que auto) dans sa racine de flux (ou le conteneur dans lequel il défile), auquel cas il est traité comme « bloqué » jusqu'à ce qu'il rencontre le bord opposé de son bloc contenant.</p>
+                    </div>
+                </div>
+            </section>            
             
-            <p> <span class="colorRed">background-image/color :</span> Arrière-plan, fond ou trame de fond. </p>
+            <section class="paramContainer">
+                <h3>border</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>Solid 1px red</h4>
+                        <p>Ajout d'une bordure de 1px rouge style solide.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="paramContainer">
+                <h3>background-color</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>color</h4>
+                        <p>Ajout d'un fond de couleur exemple background-color:red ajoutera un fond rouge.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="paramContainer">
+                <h3>color</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>color</h4>
+                        <p>Ajout d'un fond de couleur exemple color:red ajoutera une couleur rouge au texte.</p>
+                    </div>
+                </div>
+            </section>
             
-            <p> <span class="colorRed">color : red</span> Le texte change de couleur en rouge. </p>
+            <section class="paramContainer">
+                <h3>width</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>100%</h4>
+                        <p>modification de la longueur d'un objet en %</p>
+                    </div>
+                    <div>
+                        <h4>auto</h4>
+                        <p>modification de la longueur d'un objet en fonction de son contenu</p>
+                    </div>
+                    <div>
+                        <h4>111px</h4>
+                        <p>modification de la longueur d'un objet en px</p>
+                    </div>
+                    <div>
+                        <h4>11em</h4>
+                        <p>modification de la longueur d'un objet en em</p>
+                    </div>
+                </div>
+            </section>
             
-            <p> <span class="colorRed">width : 100%</span> Largeur de l'élement selectionné </p>
+            <section class="paramContainer">
+                <h3>height</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>100%</h4>
+                        <p>modification de la hauteur d'un objet en %</p>
+                    </div>
+                    <div>
+                        <h4>auto</h4>
+                        <p>modification de la hauteur d'un objet en fonction de son contenu</p>
+                    </div>
+                    <div>
+                        <h4>111px</h4>
+                        <p>modification de la hauteur d'un objet en px</p>
+                    </div>
+                    <div>
+                        <h4>11em</h4>
+                        <p>modification de la hauteur d'un objet en em</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section class="paramContainer">
+                <h3>padding</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>padding: top left bottom right </h4>
+                        <p>Ajout d'un padding a interieur de l'élement selectionné</p>
+                    </div>
+                </div>
+            </section>
 
-            <p> <span class="colorRed">height : 100%</span> Hauteur de l'élement selectionné</p>
+            <section class="paramContainer">
+                <h3>margin</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>margin: top left bottom right </h4>
+                        <p>Ajout d'un margin a exterieur de l'élement selectionné</p>
+                    </div>
+                </div>
+            </section>
 
-            <p> <span class="colorRed">padding : 10px</span> Crée une marge interieur de l'élement selectionné </p>
-
-            <p> <span class="colorRed">margin : 10px</span> Crée une marge exterieur de l'élement selectionné </p>
-
-            <p> <span class="colorRed">font-size : 16px</span> Permet de modifier la taille de la police </p>
-
-            <p> <span class="colorRed">font-weight : bold</span> Permet de mettre la police selectionné en GRAS </p>
-
-            <p> <span class="colorRed">text-transform : uppercase</span> Permet de transformer sont texte .</p>
-
-            <p> <span class="colorRed">list-style : none</span> Permet de désactiver la list des &ltul&gt &ltli&gt </p>
-        
+            
+            <section class="paramContainer">
+                <h3>font-size </h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>valeur numerique</h4>
+                        <p>Permet de modifier la taille de la police </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="paramContainer">
+                <h3>font-weight</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>normal</h4>
+                        <p>Modification de l'epaisseur de la police : normal</p>
+                    </div>
+                    <div>
+                        <h4>lighter</h4>
+                        <p>Modification de l'epaisseur de la police : tres fine</p>
+                    </div>
+                    <div>
+                        <h4>bold</h4>
+                        <p>Modification de l'epaisseur de la police : epaisse</p>
+                    </div>
+                    <div>
+                        <h4>bolder</h4>
+                        <p>Modification de l'epaisseur de la police : tres epaisse</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="paramContainer">
+                <h3>text-transform</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>capitalize</h4>
+                        <p>Modifie la majusucule des fonts: toute les lettres sont en majusucules</p>
+                    </div>
+                    <div>
+                        <h4>uppercase</h4>
+                        <p>Modifie la majusucule des fonts: les premieres lettres de chaque mot sont en majusucules</p>
+                    </div>
+                    <div>
+                        <h4>lowercase</h4>
+                        <p>Modifie la majusucule des fonts: toute les lettres sont en minuscules</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="paramContainer">
+                <h3>list-style-type</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>square</h4>
+                        <p>Modifie les puces des listes : en carré</p>
+                    </div>
+                    <div>
+                        <h4>disc</h4>
+                        <p>Modifie les puces des listes : en cercle plein</p>
+                    </div>
+                    <div>
+                        <h4>circle</h4>
+                        <p>Modifie les puces des listes : en cercle vide</p>
+                    </div>
+                    <div>
+                        <h4>none</h4>
+                        <p>Supprime les style de listes</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="paramContainer">
+                <h3>color</h3>
+                <div class="propsContainer">
+                    <div>
+                        <h4>color</h4>
+                        <p>Ajout d'un fond de couleur exemple color:red ajoutera une couleur rouge au texte.</p>
+                    </div>
+                </div>
+            </section>
+            
             <p> <span class="colorRed">z-index : 2</span> La propriété z-index définit le « z-order » (NdT : « ordre z » n'est pas usité) d'un élément positionné et de ses éléments enfants ou de ses éléments flexibles. Lorsque des éléments se chevauchent, le z-order détermine l'ordre des différentes couches que formeront les éléments. Généralement, un élément couvrira un autre élément si sa valeur de z-index est supérieure à celle du deuxième élément.</p>            
         </article>
 
