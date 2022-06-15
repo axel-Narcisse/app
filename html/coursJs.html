@@ -74,7 +74,7 @@
                         <p class="blackTxt"> Le nom de la class doit être très précis.</p>
                         <p><span class="blackTxt"> Exemple </span><span class="greenTxt"> hoursPerDay </span><span class="backTxt"> = </span><span class="redTxt"> heureParJours </span></p>
             
-                        <ul> <span class="blueTxt"> 3 type de </span> variable : <span class="greenTxt"> </span>
+                        <ul> 3<span class="blueTxt"> type </span> de <span class="greenTxt"> variable : </span>
                             <li class="redTxt">Nombres</li>
                             <li class="redTxt">Chaine de caractères</li>
                             <li class="redTxt">Booleen
@@ -138,6 +138,16 @@
 
 
 
+
+
+
+                                                   **//**  A trier **//**
+
+
+
+
+
+
                     <section class="sectionTableau">
                         <h2>Utilisation d'un tableau</h2>
                         <div>
@@ -158,14 +168,14 @@
                 
 
 
-                    
+
                     <section>
                         <h2>Liaison JS/HTML</h2>
                         <div>
                             <p>Le but <span class="blackTxt"> cibler</span> un élément html par : </p>
-                            <p>son element</p>
-                            <p>la .class</p>
-                            <p>son #ID</p>
+                            <p>son <span class="redTxt"> element</span></p>
+                            <p>la <span class="redTxt">.class</span></p>
+                            <p>son<span class="redTxt"> #ID</span></p>                            
                         </div>
                         <p>Deux manière de le faire !</p>
                         <div>
@@ -174,8 +184,7 @@
                                 <li>getElementbyClass <span class="blueTxt">('class')</span></li>
                                 <li>getElementByTagName <span class="blueTxt">('section')</span></li>                                
                             </ul>
-                        </div>
-                
+                        </div>                
                         <div>
                             <ul>document.
                                 <li>getqueryselector <span class="blueTxt">('#ID')</span></li> 
@@ -183,6 +192,33 @@
                                 <li>getqueryselector <span class="blueTxt">('section')</span></li> 
                             </ul>
                         </div>
+                    </section>
+
+                    <section class="inner">
+                        <h2>InnerText, InnerHTML, CreatElement.</h2>
+                        <div>
+                            <p><span class="blueTxt"> .innertext :</span> Modifie le texte de la balise selectionnée.</p>
+                            <p><span class="blueTxt"> .innerhtml :</span> Modifie l'html dans une balise</p>
+                            <p><span class="blueTxt"> .createlement :</span> Crée une balise après la balise selectionnée.</p>
+                        </div>
+                    </section>
+
+                    <section class="notationPointe">
+                        <h2>Notation pointée</h2>
+                        <p>Permet d'accorder aux donnés dans un <span class="bluetxt">objet.</span></p>
+                           <p>objet.<span class="blueTxt">parametre</span></p> 
+                           <p class="blackTxt">Exemple :</p>
+
+                    <div> 
+                        <p><span class="redTxt">let </span><span class="blueTxt">"café"</span> ={</p>
+                        <p><span class="redTxt">tasse :</span><span class="blueTxt">"violet"</span>,</p>
+                        <p><span class="redTxt">eau :</span><span class="blueTxt">"petit"</span>,</p>
+                        <p><span class="redTxt">lait :</span><span class="blueTxt">"false"</span>,</p>
+                        <p><span class="redTxt">sucre :</span><span class="blueTxt">"true"</span>}</p>
+                    </div>
+                    <p><span class="redTxt">let </span><span class="blueTxt">"café"</span> = <span class="blueTxt">cafe.tasse</span> ; (=violet)</p>
+                    <p><span class="redTxt">let </span><span class="blueTxt">"axelcafe"</span> = <span class="blueTxt">new cafe</span> ; ("bleu","petit","true","false",)</p>
+                    <p><span class="redTxt">let </span><span class="blueTxt">"tasse"</span> = <span class="blueTxt">axelcofe.tasse;</span> ; (=bleu)</p>
                     </section>
 
                 
