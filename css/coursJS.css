@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    background: chocolate;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+#bases .greenTxt{
+color: green;
+}
+
+#bases .redTxt{
+    color: red;
+}
+
+#bases .blackTxt{
+    color: black;
+}
+
+#bases .blueTxt{
+    color: blue;
+}
