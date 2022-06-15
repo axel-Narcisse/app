@@ -63,40 +63,55 @@
         </nav>
     </header>
     <main>
-
-        <article id="bases">
-            <h2 class="bigH2">Les bases</h2>
-            <section>
-                <h2>Création de variable</h2>
-                <div>
-                    <p><span class="blueTxt"> let </span><span class="greenTxt"> nom de la variable </span> <span class="backTxt"> = </span><span class="redTxt"> 'tintin' </span> </p>
-                    <p><span class="blueTxt"> cons </span><span class="greenTxt"> nombre de page </span> <span class="backTxt"> = </span><span class="redTxt"> 30 </span> </p>
-                    <p class="blackTxt"> Le nom de la class doit être très précis.</p>
-                    <p><span class="blackTxt"> Exemple </span><span class="greenTxt"> hoursPerDay </span><span class="backTxt"> = </span><span class="redTxt"> heureParJours </span></p>
-
-                    <ul> <span class="blueTxt"> 3 type de </span> variable : <span class="greenTxt"> </span>
-                        <li class="redTxt">Nombres</li>
-                        <li class="redTxt">Chaine de caractères</li>
-                        <li class="redTxt">Booleen
-                            <ul>
-                                <li>Vrai=true</li>
-                                <li>Faux=false</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <p><span class="blueTxt"> let </span><span class="greenTxt"> nombre </span> <span class="backTxt"> = </span><span class="redTxt"> 4 ; </span> </p>
-                    <p><span class="blueTxt"> let </span><span class="greenTxt"> legende </span> <span class="backTxt"> = </span><span class="redTxt"> 'Apex' ; </span> </p>
-                    <p><span class="blueTxt"> let </span><span class="greenTxt"> débile </span> <span class="backTxt"> = </span><span class="redTxt"> false ; </span> </p>
-
-                    <p class="blackTxt">Exemple :</p>
-
-                    <p><span class="blueTxt"> let : </span><span class="greenTxt"> Episode </span></p>
-                    <p><span class="blueTxt"> title : </span><span class="greenTxt"> 'tintin' , </span></p>
-                    <p><span class="blueTxt"> duration : </span><span class="greenTxt"> 45 , </span></p>
-                    <p><span class="blueTxt"> hasBeenWatched : </span><span class="greenTxt"> true ; </span> <span class="blackTxt"> } </span></p>
-                </div>
-                </section>
+        
+            <article id="bases">
+                <h2 class="bigH2">Les bases</h2>
+                    <section class="sectionVariable">
+                        <h2>Création de variable</h2>
+                        <div>
+                        <p><span class="blueTxt"> let </span><span class="greenTxt"> nom de la variable </span> <span class="backTxt"> = </span><span class="redTxt"> 'tintin' </span> </p>
+                        <p><span class="blueTxt"> cons </span><span class="greenTxt"> nombre de page </span> <span class="backTxt"> = </span><span class="redTxt"> 30 </span> </p>
+                        <p class="blackTxt"> Le nom de la class doit être très précis.</p>
+                        <p><span class="blackTxt"> Exemple </span><span class="greenTxt"> hoursPerDay </span><span class="backTxt"> = </span><span class="redTxt"> heureParJours </span></p>
+            
+                        <ul> <span class="blueTxt"> 3 type de </span> variable : <span class="greenTxt"> </span>
+                                    <li class="redTxt">Nombres</li>
+                                    <li class="redTxt">Chaine de caractères</li>
+                                    <li class="redTxt">Booleen
+                                        <ul>
+                                            <li>Vrai=true</li>
+                                            <li>Faux=false</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+            
+                                <p><span class="blueTxt"> let </span><span class="greenTxt"> nombre </span> <span class="backTxt"> = </span><span class="redTxt"> 4 ; </span> </p>
+                                <p><span class="blueTxt"> let </span><span class="greenTxt"> legende </span> <span class="backTxt"> = </span><span class="redTxt"> 'Apex' ; </span> </p>
+                                <p><span class="blueTxt"> let </span><span class="greenTxt"> débile </span> <span class="backTxt"> = </span><span class="redTxt"> false ; </span> </p>   
+                            </div>
+                    </section>
+                    <section class="sectioninstance">
+                        <h2>Création d'une instance</h2>
+                        <p>Le <span class="blueTxt"> constructor </span> permet de construire plusieurs <span class="blueTxt"> objets </span> du même type <span class="redTxt"> Instance </span></p>
+                        <p>Exemple : <span class="blueTxt"> constructor </span> + <span class="blueTxt"> Instance </span></p>
+                        <p>class <span class="blueTxt"> cafe </span> { </p>
+                        <p>constructor ( <span class="blueTxt"> eau ,</span> <span class="blueTxt"> cafe , </span> <span class="blueTxt"> sucre , </span> <span class="blueTxt"> tasse </span> )</p>
+                        <p> { this. <span class="blueTxt"> eau </span> = <span class="blueTxt"> eau ;</span> </p>
+                        <p>  this. <span class="blueTxt"> cafe </span> = <span class="blueTxt"> cafe ;</span> </p>
+                        <p>  this. <span class="blueTxt"> sucre </span> = <span class="blueTxt"> sucre ;</span> </p>
+                        <p>  this. <span class="blueTxt"> tasse </span> = <span class="blueTxt"> tasse ;</span> </p>
+                        <P>}}</P>
+                        <p>let <span class="blueTxt"> axelCafe </span> = <span class="redTxt"> new </span> <span class="blueTxt"> cafe </span> ( <span class="blueTxt"> "petit" ,</span> <span class="blueTxt"> 5 , </span> <span class="blueTxt"> true , </span> <span class="blueTxt"> violet </span> ) </p>
+                    </section>
+                    <section class="sectionObjet">
+                        <h2>Création d'objet</h2>
+                        <p class="blackTxt">Exemple :</p>
+            
+                                <p><span class="blueTxt"> let : </span><span class="greenTxt"> Episode </span></p>
+                                <p><span class="blueTxt"> title : </span><span class="greenTxt"> 'tintin' , </span></p>
+                                <p><span class="blueTxt"> duration : </span><span class="greenTxt"> 45 , </span></p>
+                                <p><span class="blueTxt"> hasBeenWatched : </span><span class="greenTxt"> true ; </span> <span class="blackTxt"> } </span></p>
+                    </section>
             </article>
                 
 

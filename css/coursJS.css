@@ -11,18 +11,18 @@ header{
     margin-bottom: 20px;
 }
 
-#bases .greenTxt{
+.greenTxt{
 color: green;
 }
 
-#bases .redTxt{
+.redTxt{
     color: red;
 }
 
-#bases .blackTxt{
+.blackTxt{
     color: black;
 }
 
-#bases .blueTxt{
+.blueTxt{
     color: blue;
 }
