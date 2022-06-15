@@ -98,10 +98,10 @@
             </details>  
             <details>
                 <summary>
-                    <h3 class="selecteur">Double class </h3>
+                    <h3 class="selecteur">.class1.class2 </h3>
                 </summary>
-                    <div class="example"><strong>.cool.fun { #parametreCss}</strong> selects the unique <span class="tag">section class="cool fun"</span><span class="tag">/section</span>elements.</div>
-                    <p class="description"> <span class="selector">.class1.class2</span>Selects the element with a specific id. You can also combine the ID selector with the type selector. </p>
+                    <div class="example"><strong>.cool.fun { #parametreCss}</strong> selects the unique <span class="tag">section class="name1 name2"</span><span class="tag">/section</span>elements.</div>
+                    <p class="description"> <span class="selector">.class1.class2</span>Sélectionne les elements qui possedent les deux classes "class1 class2" </p>
             </details>   
             	
             <details>
@@ -127,14 +127,15 @@
                     <h3 class="selecteur"> element.class</h3>
                 </summary>
                     <div class="example">
-                       <p>Ce selecteur sélectionne l' élement :<strong>p.intro	{}</strong></p> 
+                        <strong>p.intro	{}</strong>
+                       <p>Ce selecteur sélectionne l' élement :</p> 
                         <div class="codeContainer">
                             <span class="tag">p class=".intro"</span> 
                             <span class="tag">/p</span> 
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">p .intro</span>Sélectionne tous les élements<span class="tag">p</span>avec la class="intro"
+                        <span class="selector">p.intro</span>Sélectionne tous les élements<span class="tag">p</span>avec la class="intro"
                     </p>
             </details>
             <details>
@@ -142,7 +143,8 @@
                     <h3 class="selecteur"> element,element</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>div, p{}</strong></p> 
+                        <strong>div, p{}</strong>
+                        <p>Ce selecteur sélectionne l' élement :</p> 
                         <div class="codeContainer">
                             <span class="tag">p</span> 
                             <span class="tag">/p</span> 
@@ -159,16 +161,17 @@
                     <h3 class="selecteur">element+element</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne le premier element p qui a div pour parent :<strong>p+div{}</strong></p> 
+                        <strong>p+div{}</strong>
+                        <p>Ce selecteur sélectionne les élements :</p> 
                         <div class="codeContainer">
                             <span class="tag">div</span> 
+                            <span class="tag">/div</span> 
                             <span class="tag">p</span> 
                             <span class="tag">/p</span> 
-                            <span class="tag">/div</span> 
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">p+div</span>Sélectionne tous les élements<span class="tag">p</span> pour parent <span class="tag">div</span>
+                        <span class="selector">p+div</span>Sélectionne tous les élements<span class="tag">p</span> qui sont frere de <span class="tag">div</span>
                     </p>
             </details>
             <details>
@@ -176,7 +179,8 @@
                     <h3 class="selecteur"> element1~element2</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>p ~ ul{}</strong></p> 
+                        <strong>p ~ ul{}</strong>
+                        <p>Ce selecteur sélectionne l' élement :</p> 
                         <div class="codeContainer">
                             <span class="tag">p</span> 
                             <span class="tag">/p</span> 
@@ -193,14 +197,11 @@
                     <h3 class="selecteur"> ::after</h3>
                 </summary>
                     <div class="example">
-                        <p>Insérez quelque chose après le contenu de chaque élément p :<strong>p::after{}</strong></p> 
-                        <div class="codeContainer">
-                            <span class="tag">p</span> 
-                            <span class="tag">/p</span> 
-                        </div>  
+                        <strong>p::after{}</strong>
+                        <p>Insérez quelque chose après le contenu de chaque élément p :</p> 
                     </div>
                     <p class="description">
-                        <span class="selector">p::after</span>Sélectionne tous les élements suivis par <span class="tag">p</span> et <span class="tag"></span>
+                        <span class="selector">p::after</span>Sélectionne tous les élements suivis par <span class="tag">p</span></span>
                     </p>
             </details>
             <details>
@@ -208,22 +209,24 @@
                     <h3 class="selecteur"> :checked</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>input:checked{}</strong></p> 
+                        <strong>input:checked{}</strong>
+                        <p>Ce selecteur sélectionne l' élement :</p> 
                         <div class="codeContainer">
-                            <span class="tag">input</span> 
+                            <span class="tag">input checked</span> 
                             <span class="tag">/input</span> 
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">input:checked</span>Sélectionne chaque élément <span class="tag">input</span>
+                        <span class="selector">input:checked</span>Sélectionne chaque élément <span class="tag">input</span> checked
                     </p>
             </details>
             <details>
                 <summary>
                     <h3 class="selecteur"> :default</h3>
                 </summary>
+                <p>Ce selecteur sélectionne l' élement :
+                    <strong>input:default{}</strong></p> 
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>input:default{}</strong></p> 
                         <div class="codeContainer">
                             <span class="tag">input</span> 
                             <span class="tag">/input</span> 
@@ -238,9 +241,10 @@
                     <h3 class="selecteur"> :disabled</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>:disabled{}</strong></p> 
+                        <strong>:disabled{}</strong>
+                        <p>Ce selecteur sélectionne l' élement :</p> 
                         <div class="codeContainer">
-                            <span class="tag">input</span> 
+                            <span class="tag">input disabled</span> 
                             <span class="tag">/input</span> 
                         </div>  
                     </div>
@@ -252,14 +256,19 @@
                     <h3 class="selecteur"> :first-child</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne le premier élement :<strong>p:first-child{}</strong></p> 
+                        <strong>p:first-child{}</strong>
+                        <p>Ce selecteur sélectionne le premier élement :</p> 
                         <div class="codeContainer">
-                            <span class="tag">p</span> 
-                            <span class="tag">/p</span>
+                            <span class="tag">div</span> 
+                            <span class="tag active">p</span>
+                            <span class="tag active">/p</span> 
+                            <span class="tag">p</span>
+                            <span class="tag">/p</span> 
+                            <span class="tag">/div</span>
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">:first-child</span>Sélectionne le premier enfants de <span class="tag">p</span>
+                        <span class="selector">:first-child</span>Sélectionne le premier enfants <span class="tag">p</span> de <span class="tag">div</span>
                     </p>
             </details>
             <details>
@@ -267,28 +276,14 @@
                     <h3 class="selecteur">::first-letter</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>p::first-letter{}</strong></p> 
+                        <strong>p::first-letter{}</strong>
+                        <p>Ce selecteur sélectionne l' élement :</p> 
                         <div class="codeContainer">
-                            <span class="tag">p</span> 
+                            <span class="tag">p</span><p><span class="active">F</span>irst letter</p>
                             <span class="tag">/p</span>  
                     </div>
                     <p class="description">
-                        <span class="selector">::first-letter</span>Sélectionne toutes les premiere lettre de <span class="tag">p</span>
-                    </p>
-            </details>
-            <details>
-                <summary>
-                    <h3 class="selecteur"> ::first-line</h3>
-                </summary>
-                    <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>p:first-line{}</strong></p> 
-                        <div class="codeContainer">
-                            <span class="tag">p</span> 
-                            <span class="tag">/p</span>                            
-                        </div>  
-                    </div>
-                    <p class="description">
-                        <span class="selector">::first-line</span>Sélectionne la première lettre de chaque élément<span class="tag">p</span>
+                        <span class="selector">::first-letter</span>Sélectionne toutes les premieres lettre de <span class="tag">p</span>
                     </p>
             </details>
             <details>
@@ -296,10 +291,17 @@
                     <h3 class="selecteur"> :first-of-type</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>p:first-of-type{}</strong></p> 
+                        <strong>p:first-of-type{}</strong>
+                        <p>Ce selecteur sélectionne l'élement :</p> 
                         <div class="codeContainer">
+                            <span class="tag">div</span> 
+                            <span class="tag active">p</span> 
+                            <span class="tag active">/p</span>
                             <span class="tag">p</span> 
                             <span class="tag">/p</span> 
+                            <span class="tag">p</span> 
+                            <span class="tag">/p</span>  
+                            <span class="tag">/div</span>
                         </div>  
                     </div>
                     <p class="description">
@@ -311,7 +313,8 @@
                     <h3 class="selecteur"> :hover</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>a:hover{}</strong></p> 
+                        <strong>a:hover{}</strong>
+                        <p>Ce selecteur sélectionne l' élement :</p> 
                         <div class="codeContainer">
                             <span class="tag">a</span> 
                             <span class="tag">/a</span> 
@@ -323,13 +326,20 @@
             </details>
         <details>
                 <summary>
-                    <h3 class="selecteur"> :last-child</h3>
+                    <h3 class="selecteur">:last-child</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>p:last-child{}</strong></p> 
+                        <strong>p:last-child{}</strong>
+                        <p>Ce selecteur sélectionne l' élement :</p> 
                         <div class="codeContainer">
+                            <span class="tag">div</span> 
+                            <span class="tag ">p</span> 
+                            <span class="tag ">/p</span>
                             <span class="tag">p</span> 
-                            <span class="tag">/p</span>                           
+                            <span class="tag">/p</span> 
+                            <span class="tag active">p</span> 
+                            <span class="tag active">/p</span>  
+                            <span class="tag">/div</span>                          
                         </div>  
                     </div>
                     <p class="description">
@@ -340,14 +350,23 @@
                     <h3 class="selecteur"> :last-of-type</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>p:last-of-type{}</strong></p> 
+                        <strong>p:last-of-type{}</strong>
+                        <p>Ce selecteur sélectionne l' élement :</p> 
                         <div class="codeContainer">
+                            <span class="tag">div</span> 
+                            <span class="tag ">p</span> 
+                            <span class="tag ">/p</span>
                             <span class="tag">p</span> 
-                            <span class="tag">/p</span>                       
+                            <span class="tag">/p</span> 
+                            <span class="tag active">p</span> 
+                            <span class="tag active">/p</span> 
+                            <span class="tag ">span</span> 
+                            <span class="tag ">/span</span>   
+                            <span class="tag">/div</span>                         
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> et <span class="tag">div</span>
+                        <span class="selector">div, p</span>Sélectionne le dernier element<span class="tag">p</span> et <span class="tag">div</span>
                     </p>
             </details>
             <details>
@@ -355,14 +374,21 @@
                     <h3 class="selecteur"> :nth-child(n)</h3>
                 </summary>
                     <div class="example">
-                        <p>Ce selecteur sélectionne l' élement :<strong>p:last-child{}</strong></p> 
+                        <strong>p:nth-child(3)</strong>
+                        <p>Ce selecteur sélectionne tout les p qui sont le 3e enfant:</p> 
                         <div class="codeContainer">
+                            <span class="tag">div</span> 
+                            <span class="tag ">p</span> 
+                            <span class="tag ">/p</span>
                             <span class="tag">p</span> 
                             <span class="tag">/p</span> 
+                            <span class="tag active">p</span> 
+                            <span class="tag active">/p</span>   
+                            <span class="tag">/div</span>  
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">:last-child</span>Sélectionne le dernier enfants de<span class="tag">p</span>
+                        <span class="selector">div:nth-child(n)</span>Sélectionne les <span class="tag">div</span> qui sont "n"eme enfants
                     </p>
             </details>          
             <details>
@@ -372,12 +398,21 @@
                     <div class="example">
                         <p>Ce selecteur sélectionne l' élement :<strong>p:only-child{}</strong></p> 
                         <div class="codeContainer">
+                            <span class="tag">div</span> 
+                            <span class="tag ">p</span> 
+                            <span class="tag ">/p</span>
                             <span class="tag">p</span> 
-                            <span class="tag">/p</span>                             
+                            <span class="tag">/p</span> 
+                            <span class="tag">/div</span>
+                            <br>
+                            <span class="tag">div</span> 
+                            <span class="tag active">p</span> 
+                            <span class="tag active">/p</span>
+                            <span class="tag">/div</span>                             
                         </div>  
                     </div>
                     <p class="description">
-                        <span class="selector">div, p</span>Sélectionne tous les élements<span class="tag">p</span> qui n'ont pas de frère
+                        <span class="selector">div, p</span>Sélectionne l'élements<span class="tag">p</span> qui est l'unique enfant de son parent
                     </p>
             </details>
         </section>
