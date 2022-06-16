@@ -4,6 +4,9 @@
 }
 
 header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
     background: chocolate;
     color: white;
@@ -11,8 +14,27 @@ header{
     margin-bottom: 20px;
 }
 
+nav ul{
+    list-style: none;
+}
+
+h2{
+color: red;
+    text-decoration: underline 1px solid red;
+    padding: 9px;
+}
+
+.bigh2{
+    display: flex;
+    justify-content: center; 
+    font-size: 35px;
+    color: chocolate;
+    padding: 9px;   
+    border-radius: 3px ;
+}
+
 .greenTxt{
-color: green;
+    color: green;
 }
 
 .redTxt{
