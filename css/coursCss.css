@@ -72,3 +72,49 @@ header{
     border: solid black 1px;
     padding: 9px;
 }
+
+h2{
+    margin: 18px 0;
+    font-weight: bolder;
+    color: white;
+    background-color: red;
+    display: inline-block;
+    padding: 9px;
+}
+
+h3{
+    color: purple;
+    padding: 9px;
+    text-align: center;
+}
+
+p{
+    color: blue;
+}
+
+body{
+    padding: 18px;
+}
+
+.m9{
+    margin-left: 9px;
+    
+}
+.m18{
+    margin-left: 18px;
+}
+
+.m27{
+    margin-left: 27px; 
+}
+
+.containerFlexDef{
+    text-align: center;
+}
+
+.containerFlexDef{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+
