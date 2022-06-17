@@ -776,65 +776,82 @@
                     </details>
                 </div>
             </section>
-            
-            <p> <span class="colorRed">z-index : 2</span> La propriété z-index définit le « z-order » (NdT : « ordre z » n'est pas usité) d'un élément positionné et de ses éléments enfants ou de ses éléments flexibles. Lorsque des éléments se chevauchent, le z-order détermine l'ordre des différentes couches que formeront les éléments. Généralement, un élément couvrira un autre élément si sa valeur de z-index est supérieure à celle du deuxième élément.</p>            
-        </article>
-
+            <section class="paramContainer">
+                <h3>z-index</h3>
+                <div class="propsContainer">
+                    <div>
+                        <details>
+                            <summary>
+                                <h4>z-index : 2</h4>
+                            </summary>
+                        <p>La propriété z-index définit le « z-order » (NdT : « ordre z » n'est pas usité) d'un élément positionné et de ses éléments enfants ou de ses éléments flexibles. Lorsque des éléments se chevauchent, le z-order détermine l'ordre des différentes couches que formeront les éléments. Généralement, un élément couvrira un autre élément si sa valeur de z-index est supérieure à celle du deuxième élément.</p>
+                    </div>
+                    </details>
+                </div>
+            </section>
         <article id="flex">
+            <section>
+                <div>
+                    <h2>A quoi sert Flex ?</h2>
 
-            <h3>Cours Css</h3> 
-            <h4>A quoi sert Flex ?</h4>
+                    <p>La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur. Les propriétés détaillées correspondantes à cette propriété raccourcie sont flex-grow, flex-shrink et flex-basis. Les éléments flexibles peuvent être étirés ou réduits pour utiliser un espace proportionnel à leur coefficient de grossissement ou de rétrécissement afin de ne pas dépasser d'un conteneur.</p>
+                </div>
+                <div>
+                    <h3>Flex-Wrap</h3>
 
-            <p>La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur. Les propriétés détaillées correspondantes à cette propriété raccourcie sont flex-grow, flex-shrink et flex-basis. Les éléments flexibles peuvent être étirés ou réduits pour utiliser un espace proportionnel à leur coefficient de grossissement ou de rétrécissement afin de ne pas dépasser d'un conteneur.</p>
+                    <p>Créer un conteneur flexible sur plusieurs lignes avec flex-wrap</p>
+    
+                    <p>Pour obtenir ce « passage à la ligne », on ajoute la propriété flex-wrap avec la valeur wrap. Désormais, si les éléments sont trop grands pour tenir sur une seule ligne, ils passeront sur une autre ligne. L'exemple suivant illustre le résultat obtenu lorsque la somme des tailles des éléments dépasse celle du conteneur. Avec flex-wrap qui vaut wrap, les éléments passent à la ligne. Si on modifie la valeur avec nowrap (qui correspond à la valeur initiale), les éléments seront rétrécis pour tenir sur une ligne (car les valeurs initiales des boîtes flexibles permettent aux éléments d'être ainsi redimensionnés). Si on utilise nowrap et que les éléments ne peuvent pas être redimensionnés (ou pas suffisamment), cela causera un dépassement.</p>
+                </div>               
+            </section>
+            <section>
+                <h3>L'axe principal</h3>
 
-            <h3>L'axe principal</h3>
+                <ul>L'axe principal est défini par la propriété  flex-direction qui peut prendre quatre valeurs :
+                    <li>row</li>
+                    <li>row-reverse</li>
+                    <li>column</li>
+                    <li>column-reverse</li>
+                 </ul>
+    
+    
+                 <h3>L'axe secondaire (cross axis)</h3>
+    
+                <p>L'axe secondaire est perpendiculaire à l'axe principal. Ainsi, si flex-direction vaut row ou row-reverse, l'axe secondaire suivra l'axe des colonnes.</p>
+    
+                <p>Si l'axe principale est column ou column-reverse, l'axe secondaire suivra celui des lignes (horizontales)
+                </p>
+            </section>    
+            <section>
+                <h2>les Valeur</h2>
 
-            <ul>L'axe principal est défini par la propriété  flex-direction qui peut prendre quatre valeurs :
-                <li>row</li>
-                <li>row-reverse</li>
-                <li>column</li>
-                <li>column-reverse</li>
-             </ul>
+                <h3>Valeurs row</h3>
+    
+                <p>Si on choisit la valeur row ou row-reverse, l'axe principal sera aligné avec la direction « en ligne » (inline direction) (c'est la direction logique qui suit le sens d'écriture du document).</p>
+    
+                <h3>Valeurs Column</h3>
+                <p>Si on choisit la valeur column ou column-reverse, l'axe principal suivra la direction de bloc (block direction) et progressera le long de l'axe perpendiculaire au sens d'écriture.</p>
+            </section>      
+            <section>
+                <div>
+                    <h2>Alignement, justification et distribution de l'espace disponible entre les éléments</h2>
 
+                    <p>Une fonctionnalité majeure des boîtes flexibles est de permettre l'alignement et la justification des éléments le long des axes principal et secondaire tout en distribuant l'espace entre les éléments flexibles.</p>
+                    <div>    
+                </div>
+                <h3>align-items</h3>
 
-             <h5>L'axe secondaire (cross axis)</h5>
+                <p>La propriété align-items permet d'aligner les éléments le long de l'axe secondaire.</p>
+                </div>
+                <div>
+                    <h5>justify-content</h5>
 
-            <p>L'axe secondaire est perpendiculaire à l'axe principal. Ainsi, si flex-direction vaut row ou row-reverse, l'axe secondaire suivra l'axe des colonnes.</p>
-
-            <p>Si l'axe principale est column ou column-reverse, l'axe secondaire suivra celui des lignes (horizontales)
-            </p>
-
-            <h4>les Valeur</h4>
-
-            <h6>Valeurs row</h6>
-
-            <p>Si on choisit la valeur row ou row-reverse, l'axe principal sera aligné avec la direction « en ligne » (inline direction) (c'est la direction logique qui suit le sens d'écriture du document).</p>
-
-            <h6>Valeurs Column</h6>
-            <p>Si on choisit la valeur column ou column-reverse, l'axe principal suivra la direction de bloc (block direction) et progressera le long de l'axe perpendiculaire au sens d'écriture.</p>
-
-            
-            <h4>Flex-Wrap</h4>
-
-            <h5>Créer un conteneur flexible sur plusieurs lignes avec flex-wrap</h5>
-
-            <p>Pour obtenir ce « passage à la ligne », on ajoute la propriété flex-wrap avec la valeur wrap. Désormais, si les éléments sont trop grands pour tenir sur une seule ligne, ils passeront sur une autre ligne. L'exemple suivant illustre le résultat obtenu lorsque la somme des tailles des éléments dépasse celle du conteneur. Avec flex-wrap qui vaut wrap, les éléments passent à la ligne. Si on modifie la valeur avec nowrap (qui correspond à la valeur initiale), les éléments seront rétrécis pour tenir sur une ligne (car les valeurs initiales des boîtes flexibles permettent aux éléments d'être ainsi redimensionnés). Si on utilise nowrap et que les éléments ne peuvent pas être redimensionnés (ou pas suffisamment), cela causera un dépassement.</p>
-
-            <h4>Alignement, justification et distribution de l'espace disponible entre les éléments</h4>
-
-            <p>Une fonctionnalité majeure des boîtes flexibles est de permettre l'alignement et la justification des éléments le long des axes principal et secondaire tout en distribuant l'espace entre les éléments flexibles.</p>
-
-            <h5>align-items</h5>
-
-            <p>La propriété align-items permet d'aligner les éléments le long de l'axe secondaire.</p>
-
-            <h5>justify-content</h5>
-
-            <p>La propriété justify-content est utilisée afin d'aligner les éléments le long de l'axe principal dans la direction définie par flex-direction. La valeur initiale est flex-start qui place les éléments à partir de la ligne de début du conteneur sur l'axe principal. La valeur flex-end permet de les placer vers la fin et la valeur center permet de les centrer le long de l'axe principal.</p>
+                    <p>La propriété justify-content est utilisée afin d'aligner les éléments le long de l'axe principal dans la direction définie par flex-direction. La valeur initiale est flex-start qui place les éléments à partir de la ligne de début du conteneur sur l'axe principal. La valeur flex-end permet de les placer vers la fin et la valeur center permet de les centrer le long de l'axe principal.</p>
+                </div>
+            </section> 
         </article>
 
-        <article id="hoverClick">
-
+        <section id="hoverClick">
             <h2>A quoi nous sert :hover ?</h2>
 
             <p>La pseudo-classe :hover permet de spécifier l'apparence d'un élément au moment où l'utilisateur le survole avec le pointeur, sans nécessairement l'activer.</p>
@@ -843,22 +860,22 @@
 
             <p>La pseudo-classe :hover peut être appliquée à n'importe quel pseudo-élément.</p> 
 
-        </article>
-        <article id="backgroundImg">
-
+        </section>
+        <section id="backgroundImg">
+        <div>
             <h2>A quoi nous sert le background-image?</h2>
 
-            <p>La propriété d'Arrière-plan CSS background-image permet de mettre des ou une image d'arrière-plan ou un dégradé de couleur linéaire en arrière-plan ou un dégradé de couleur radial en arrière-plan. Par défaut, l'image d'arrière-plan ou le dégradé de couleur vont s'étendre sous les bordures</p>
+             <p>La propriété d'Arrière-plan CSS background-image permet de mettre des ou une image d'arrière-plan ou un dégradé de couleur linéaire en arrière-plan ou un dégradé de couleur radial en arrière-plan. Par défaut, l'image d'arrière-plan ou le dégradé de couleur vont s'étendre sous les bordures</p>
 
-            <ul>La propriété de feuille de style background-image CSS peut prendre une/des valeurs suivantes :
-                <li>none : pas d'image ou de dégradé en arrière-plan, valeur par défaut.</li>
-                <li>url(url-image) : l'url de l'image d'arrière plan, peut être relative ou absolue.
-                    Le point de départ de l'url relative de l'image est l'endroit où se trouve la feuille de style background-image.</li>
-                <li>inherit : l'arrière plan ou fond hérite de la valeur du background-image de son parent (CSS2).</li>
+            <ul>La propriété de feuille de style background-image   CSS  peut prendre une/des valeurs suivantes :
+            <li>none : pas d'image ou de dégradé en arrière-plan, valeur par défaut.</li>
+            <li>url(url-image) : l'url de l'image d'arrière plan, peut être relative ou absolue.
+            Le point de départ de l'url relative de l'image est l'endroit où se trouve la feuille de style background-image.</li>
+             <li>inherit : l'arrière plan ou fond hérite de la valeur du background-image de son parent (CSS2).</li>
             </ul>
-
+        </div>
+        <div>
             <h3>Définitions CSS annexes background-image</h3>
-
             <ul>
                 <li>background :
                     <ul>
@@ -886,52 +903,54 @@
                     </ul>
                 </li>
             </ul>
-        </article>
-        <article id="sousMenuHeader">
+        </div>
+    </section>
+        <section id="sousMenuHeader">
+            <div>
+                <h2>A quoi nous sert un sous-menu et comment le crée ?</h2>
 
-            <h2>A quoi nous sert un sous-menu et comment le crée ?</h2>
-
-            <p>Le menu sert à structurer un site Web et constitue un élément important en termes de référencement.</p>
-
-            <ul>
-                <li>On peux créer un menu avec :
-                    <ul>
-                        <li>HTML/CSS,</li>
-                        <li>JavaScript,</li>
-                        <li>Flas</li>
-                    </ul>
-                </li>
-            </ul> 
-
-            <h3>Créeation d'un sous-menu</h3>
-
-            <code>
+                <p>Le menu sert à structurer un site Web et constitue un élément important en termes de référencement.</p>
+    
                 <ul>
-                    <li>premier sous-menu
+                    <li>On peux créer un menu avec :
                         <ul>
-                            <li>premier list du premier sous menu</li>
-                            <li>deuxieme list du premier sous menu</li>
-                            <li>troisieme list du premier sous menu</li>
+                            <li>HTML/CSS,</li>
+                            <li>JavaScript,</li>
+                            <li>Flas</li>
                         </ul>
                     </li>
-                    <li>deuxieme sous-menu
-                        <ul>
-                            <li>premier list du deuxieme sous menu</li>
-                            <li>deuxieme list du deuxieme sous menu</li>
-                            <li>troisieme list du deuxieme sous menu</li>
-                        </ul>
-                    </li>
-                    <li>troisieme sous-menu
-                        <ul>
-                            <li>premier list du troisieme sous menu</li>
-                            <li>deuxieme list du troisieme sous menu</li>
-                            <li>troisieme list du troisieme sous menu</li>
-                        </ul>
-                    </li>
-                </ul>
-             </code>
+                </ul> 
+            </div>
+            <div>
+                <h3>Créeation d'un sous-menu</h3>
 
-        </article>
+                <code>
+                    <ul>
+                        <li>premier sous-menu
+                            <ul>
+                                <li>premier list du premier sous menu</li>
+                                <li>deuxieme list du premier sous menu</li>
+                                <li>troisieme list du premier sous menu</li>
+                            </ul>
+                        </li>
+                        <li>deuxieme sous-menu
+                            <ul>
+                                <li>premier list du deuxieme sous menu</li>
+                                <li>deuxieme list du deuxieme sous menu</li>
+                                <li>troisieme list du deuxieme sous menu</li>
+                            </ul>
+                        </li>
+                        <li>troisieme sous-menu
+                            <ul>
+                                <li>premier list du troisieme sous menu</li>
+                                <li>deuxieme list du troisieme sous menu</li>
+                                <li>troisieme list du troisieme sous menu</li>
+                            </ul>
+                        </li>
+                    </ul>
+                 </code>
+            </div>         
+        </section>
         <article id="grid"></article>
 
     </main>
