@@ -11,6 +11,11 @@ header{
     margin-bottom: 20px;
 }
 
+article{
+    border-bottom-style: dashed;
+    padding: 9px;
+}
+
 .tag{
     position: relative;
     padding: 0 14px;
@@ -86,10 +91,12 @@ h3{
     color: purple;
     padding: 9px;
     text-align: center;
+    text-decoration: underline solid purple 1px;
 }
 
 p{
     color: blue;
+    padding: 9px;
 }
 
 body{
@@ -116,5 +123,6 @@ body{
     text-align: center;
     margin-bottom: 18px;
 }
+
 
 
