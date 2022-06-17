@@ -129,5 +129,12 @@ body{
     margin-bottom: 18px;
 }
 
+.greenTxt{
+    color: green;
+}
+
+#parametreCss section{
+    width: 180px;
+}
 
 
