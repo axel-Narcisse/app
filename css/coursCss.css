@@ -4,11 +4,11 @@
 }
 
 header{
-    text-align: center;
-    background: coral;
-    color: white;
-    padding: 20px 0;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: chocolate;
+    padding: 9px;
 }
 
 article{
@@ -52,6 +52,7 @@ article{
 #selectorCssContainer section, #parametreCss .paramContainer{
     display: flex;
     flex-wrap: wrap;
+    padding: 9px;
 }
 
 #selectorCssContainer details{
@@ -76,6 +77,10 @@ article{
     margin:0 9px;
     border: solid black 1px;
     padding: 9px;
+}
+
+h1{
+    color: white;
 }
 
 h2{
