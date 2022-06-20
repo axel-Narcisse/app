@@ -795,9 +795,8 @@
         </article>
         <article id="flex">
             <section>
-                <div class="containerFlexDef">
+                <div class="containerFlexDef">            
                     <h2>A quoi sert Flex ?</h2>
-
                     <p class="m9">La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur. Les propriétés détaillées correspondantes à cette propriété raccourcie sont flex-grow, flex-shrink et flex-basis. Les éléments flexibles peuvent être étirés ou réduits pour utiliser un espace proportionnel à leur coefficient de grossissement ou de rétrécissement afin de ne pas dépasser d'un conteneur.</p>
                 </div>
                 <div class="containerFlexDef">
@@ -806,56 +805,78 @@
                     <p class="m9">Créer un conteneur flexible sur plusieurs lignes avec flex-wrap</p>
     
                     <p class="m9">Pour obtenir ce « passage à la ligne », on ajoute la propriété flex-wrap avec la valeur wrap. Désormais, si les éléments sont trop grands pour tenir sur une seule ligne, ils passeront sur une autre ligne. L'exemple suivant illustre le résultat obtenu lorsque la somme des tailles des éléments dépasse celle du conteneur. Avec flex-wrap qui vaut wrap, les éléments passent à la ligne. Si on modifie la valeur avec nowrap (qui correspond à la valeur initiale), les éléments seront rétrécis pour tenir sur une ligne (car les valeurs initiales des boîtes flexibles permettent aux éléments d'être ainsi redimensionnés). Si on utilise nowrap et que les éléments ne peuvent pas être redimensionnés (ou pas suffisamment), cela causera un dépassement.</p>
+                    <img class="imageExemple" src="../img/flex-wrap.svg" alt="">
                 </div>               
             </section>
-            <section>
-                <h3>L'axe principal</h3>
+            <section class="flexAxe">
+                <div class="axePricipal">
+                    <h3>L'axe principal</h3>
 
-                <ul class="m9">L'axe principal est défini par la propriété  flex-direction qui peut prendre quatre valeurs :
-                    <li class="m18">row</li>
-                    <li class="m18">row-reverse</li>
-                    <li class="m18">column</li>
-                    <li class="m18">column-reverse</li>
-                 </ul>
+                    <ul class="m9">L'axe principal est défini par la propriété  flex-direction qui peut prendre quatre valeurs :
+                        <li class="m18">row</li>
+                        <li class="m18">row-reverse</li>
+                        <li class="m18">column</li>
+                        <li class="m18">column-reverse</li>
+                     </ul>    
+                </div>
+                <div class="axelSecondaire">
+                    <h3>L'axe secondaire (cross axis)</h3>
     
-    
-                 <h3>L'axe secondaire (cross axis)</h3>
-    
-                <p class="m9">L'axe secondaire est perpendiculaire à l'axe principal. Ainsi, si flex-direction vaut row ou row-reverse, l'axe secondaire suivra l'axe des colonnes.</p>
-    
-                <p class="m9">Si l'axe principale est column ou column-reverse, l'axe secondaire suivra celui des lignes (horizontales)
-                </p>
+                    <p class="m9">L'axe secondaire est perpendiculaire à l'axe principal. Ainsi, si flex-direction vaut row ou row-reverse, l'axe secondaire suivra l'axe des colonnes.</p>
+        
+                    <p class="m9">Si l'axe principale est column ou column-reverse, l'axe secondaire suivra celui des lignes (horizontales)
+                    </p>
+                </div> 
             </section>    
             <section>
                 <div class="containerFlexDef">
                     <h2>les Valeur</h2>
-                </div>               
+                </div>
+                <section class="sectionRowColumn">
+                    <div>
+                        <h3>Valeurs row</h3>
+        
+                        <p class="m9">Si on choisit la valeur row ou row-reverse, l'axe principal sera aligné avec la direction « en ligne » (inline direction) (c'est la direction logique qui suit le sens d'écriture du document).</p>
+    
+                        <img class="imageExemple" src="../img/row.png" alt="">
+        
+                    </div>
+                    
+                    <div>
+                        <h3>Valeurs Column</h3>
+    
+                        <p class="m9">Si on choisit la valeur column ou column-reverse, l'axe principal suivra la direction de bloc (block direction) et progressera le long de l'axe perpendiculaire au sens d'écriture.</p>
+         
+                        <img class="imageExemple" src="../img/colunm.jpeg" alt="">
+                    </div>
+                    
+                </section>               
                 
-                <h3>Valeurs row</h3>
-    
-                <p class="m9">Si on choisit la valeur row ou row-reverse, l'axe principal sera aligné avec la direction « en ligne » (inline direction) (c'est la direction logique qui suit le sens d'écriture du document).</p>
-    
-                <h3>Valeurs Column</h3>
+                
 
-                <p class="m9">Si on choisit la valeur column ou column-reverse, l'axe principal suivra la direction de bloc (block direction) et progressera le long de l'axe perpendiculaire au sens d'écriture.</p>
             </section>      
             <section>
-                <div class="containerFlexDef">
+                <div class="alignItemJustCont">
                     <h2>Alignement, justification et distribution de l'espace disponible entre les éléments</h2>
-                </div>
-                <div>
                     <p class="m9">Une fonctionnalité majeure des boîtes flexibles est de permettre l'alignement et la justification des éléments le long des axes principal et secondaire tout en distribuant l'espace entre les éléments flexibles.</p>
-                    <div>    
                 </div>
-                <h3>Align-items</h3>
-
-                <p class="m9">La propriété align-items permet d'aligner les éléments le long de l'axe secondaire.</p>
-                </div>
-                <div>
-                    <h3>Justify-content</h3>
-
-                    <p class="m9">La propriété justify-content est utilisée afin d'aligner les éléments le long de l'axe principal dans la direction définie par flex-direction. La valeur initiale est flex-start qui place les éléments à partir de la ligne de début du conteneur sur l'axe principal. La valeur flex-end permet de les placer vers la fin et la valeur center permet de les centrer le long de l'axe principal.</p>
-                </div>
+                <section class="flexAlignItemJustCont">
+                    <div>
+                        <h3>Align-items</h3>
+    
+                        <p class="m9">La propriété align-items permet d'aligner les éléments le long de l'axe secondaire.</p>                
+        
+                        <img class="imageExemple" src="../img/align-items.svg" alt="">
+                    </div>
+                   
+                    <div>
+                        <h3>Justify-content</h3>
+    
+                        <p class="m9">La propriété justify-content est utilisée afin d'aligner les éléments le long de l'axe principal dans la direction définie par flex-direction. La valeur initiale est flex-start qui place les éléments à partir de la ligne de début du conteneur sur l'axe principal. La valeur flex-end permet de les placer vers la fin et la valeur center permet de les centrer le long de l'axe principal.</p>
+    
+                        <img  class="imageExemple" src="../img/justify-content.svg" alt="">
+                    </div>
+                </section>               
             </section> 
         </article>
 
@@ -887,7 +908,7 @@
              <li class="m18">inherit : l'arrière plan ou fond hérite de la valeur du background-image de son parent (CSS2).</li>
             </ul>
         </div>
-        <div>
+        <div class="backgroundDef">
             <h3>Définitions CSS annexes background-image</h3>
             <ul>
                 <li class="m9">background :

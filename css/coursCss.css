@@ -16,6 +16,15 @@ article{
     padding: 9px;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
+.imageExemple{
+    width: 450px;
+}
+
 .tag{
     position: relative;
     padding: 0 14px;
@@ -79,12 +88,48 @@ article{
     padding: 9px;
 }
 
+.sectionRowColumn{
+    display: flex;
+    padding: 9px;
+    margin: 0 9px;
+}
+
+.sectionRowColumn div{
+    margin: 0 9px;
+}
+
+.flexAlignItemJustCont{
+    display: flex;
+    padding: 9px;
+    margin: 0 9px;
+}
+.flexAlignItemJustCont div{
+    margin: 0 9px;
+    width :45%;
+    text-align: center;
+}
+
+.alignItemJustCont{
+    text-align: center;
+}
+
+.flexAxe{
+    display: flex;
+    justify-content: center;
+}
+
+.flexAxe div{
+    margin: 0 9px;
+    width :45%;
+    text-align: center;
+}
+
 h1{
     color: white;
 }
 
 h2{
-    margin: 18px 0;
+    margin: 27px 0;
     font-weight: bolder;
     color: white;
     background-color: red;
@@ -98,12 +143,12 @@ h3{
     text-align: center;
     text-decoration: underline solid purple 1px;
     background-color: blanchedalmond;
-    margin-bottom: 9px;
+    margin: 9px 0;
 }
 
 p{
     color: blue;
-    padding: 9px;
+    padding: 11px;
 }
 
 body{
