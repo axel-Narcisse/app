@@ -59,3 +59,7 @@ color: red;
     width: 22%;
     margin: 9px ;
 }
+
+.hide{
+    display: none;
+}
