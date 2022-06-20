@@ -62,194 +62,188 @@
             </ul>
         </nav>
     </header>
-
-    
     <main>
+        <article id="bases">
+            <h2 class="bigH2">Les bases</h2>
+            <div class="sectionContainer">
+                <section class="sectionVariable">
+                    <h2>Création de variable</h2>
+                    <div>
+                    <p><span class="blueTxt"> let </span><span class="greenTxt"> nom de la variable </span> <span class="backTxt"> = </span><span class="redTxt"> 'tintin' </span> </p>
+                    <p><span class="blueTxt"> cons </span><span class="greenTxt"> nombre de page </span> <span class="backTxt"> = </span><span class="redTxt"> 30 </span> </p>
+                    <p class="blackTxt"> Le nom de la class doit être très précis.</p>
+                    <p><span class="blackTxt"> Exemple </span><span class="greenTxt"> hoursPerDay </span><span class="backTxt"> = </span><span class="redTxt"> heureParJours </span></p>
         
-            <article id="bases">
-                <h2 class="bigH2">Les bases</h2>
-                    <section class="sectionVariable">
-                        <h2>A quoi nous sert une variable ?</h2>
-                        <p>Le propre d'une variable et l'intérêt principal de celles-ci est de pouvoir stocker différentes valeurs. Pour affecter une nouvelle valeur dans une variable déjà initialisée, on va se contenter d'utiliser à nouveau l'opérateur d'affectation = .</p>
-                        <h2>Création de variable</h2>
-                        <div>
-                        <p><span class="blueTxt"> let </span><span class="greenTxt"> nom de la variable </span> <span class="backTxt"> = </span><span class="redTxt"> 'tintin' </span> </p>
-                        <p><span class="blueTxt"> cons </span><span class="greenTxt"> nombre de page </span> <span class="backTxt"> = </span><span class="redTxt"> 30 </span> </p>
-                        <p class="blackTxt"> Le nom de la class doit être très précis.</p>
-                        <p><span class="blackTxt"> Exemple </span><span class="greenTxt"> hoursPerDay </span><span class="backTxt"> = </span><span class="redTxt"> heureParJours </span></p>
-            
-                        <ul> 3<span class="blueTxt"> type </span> de <span class="greenTxt"> variable : </span>
-                            <li class="redTxt">Nombres</li>
-                            <li class="redTxt">Chaine de caractères</li>
-                            <li class="redTxt">Booleen
-                                <ul>
-                                    <li>Vrai=true</li>
-                                    <li>Faux=false</li>
-                                </ul>
-                            </li>
-                        </ul>
-            
-                        <p><span class="blueTxt"> let </span><span class="greenTxt"> nombre </span> <span class="backTxt"> = </span><span class="redTxt"> 4 ; </span> </p>
-                        <p><span class="blueTxt"> let </span><span class="greenTxt"> legende </span> <span class="backTxt"> = </span><span class="redTxt"> 'Apex' ; </span> </p>
-                        <p><span class="blueTxt"> let </span><span class="greenTxt"> débile </span> <span class="backTxt"> = </span><span class="redTxt"> false ; </span> </p>   
-                        </div>
-                    </section>
+                    <ul> 3<span class="blueTxt"> type </span> de <span class="greenTxt"> variable : </span>
+                        <li class="redTxt">Nombres</li>
+                        <li class="redTxt">Chaine de caractères</li>
+                        <li class="redTxt">Booleen
+                            <ul>
+                                <li>Vrai=true</li>
+                                <li>Faux=false</li>
+                            </ul>
+                        </li>
+                    </ul>
+        
+                    <p><span class="blueTxt"> let </span><span class="greenTxt"> nombre </span> <span class="backTxt"> = </span><span class="redTxt"> 4 ; </span> </p>
+                    <p><span class="blueTxt"> let </span><span class="greenTxt"> legende </span> <span class="backTxt"> = </span><span class="redTxt"> 'Apex' ; </span> </p>
+                    <p><span class="blueTxt"> let </span><span class="greenTxt"> débile </span> <span class="backTxt"> = </span><span class="redTxt"> false ; </span> </p>   
+                    </div>
+                </section>
 
-                    <section class="sectionObjet">
-                        <h2>Création d'objet</h2>
-                        <p class="blackTxt">Exemple :</p>
-            
-                        <p><span class="blueTxt"> let : </span><span class="greenTxt"> Episode </span></p>
-                        <p><span class="blueTxt"> title : </span><span class="greenTxt"> 'tintin' , </span></p>
-                        <p><span class="blueTxt"> duration : </span><span class="greenTxt"> 45 , </span></p>
-                        <p><span class="blueTxt"> hasBeenWatched : </span><span class="greenTxt"> true ; </span> <span class="blackTxt"> } </span></p>
-                    </section>
-                    <section class="sectioninstance">
-                        <h2>Création d'une instance</h2>
-                        <p>Le <span class="blueTxt"> constructor </span> permet de construire plusieurs <span class="blueTxt"> objets </span> du même type <span class="redTxt"> Instance </span></p>
-                        <p>Exemple : <span class="blueTxt"> constructor </span> + <span class="blueTxt"> Instance </span></p>
-                      
-                        <div class="codeContainer">
-                            <p>class <span class="blueTxt"> cafe </span> { </p>
-                            <p>constructor ( <span class="blueTxt"> eau ,</span> <span class="blueTxt"> cafe , </span> <span class="blueTxt"> sucre , </span> <span class="blueTxt"> tasse </span> ) { </p>
-                            <div class="paramContainer">
-                                <p>this. <span class="blueTxt"> eau </span> = <span class="blueTxt"> eau ;</span> </p>
-                                <p>this. <span class="blueTxt"> cafe </span> = <span class="blueTxt"> cafe ;</span> </p>
-                                <p>this. <span class="blueTxt"> sucre </span> = <span class="blueTxt"> sucre ;</span> </p>
-                                <p>this. <span class="blueTxt"> tasse </span> = <span class="blueTxt"> tasse ;</span> </p>
-                                <p>}}</p>
-                            </div>
-                            
+                <section class="sectionObjet">
+                    <h2>Création d'objet</h2>
+                    <p class="blackTxt">Exemple :</p>
+        
+                    <p><span class="blueTxt"> let : </span><span class="greenTxt"> Episode </span></p>
+                    <p><span class="blueTxt"> title : </span><span class="greenTxt"> 'tintin' , </span></p>
+                    <p><span class="blueTxt"> duration : </span><span class="greenTxt"> 45 , </span></p>
+                    <p><span class="blueTxt"> hasBeenWatched : </span><span class="greenTxt"> true ; </span> <span class="blackTxt"> } </span></p>
+                </section>
+                <section class="sectioninstance">
+                    <h2>Création d'une instance</h2>
+                    <p>Le <span class="blueTxt"> constructor </span> permet de construire plusieurs <span class="blueTxt"> objets </span> du même type <span class="redTxt"> Instance </span></p>
+                    <p>Exemple : <span class="blueTxt"> constructor </span> + <span class="blueTxt"> Instance </span></p>
+                    
+                    <div class="codeContainer">
+                        <p>class <span class="blueTxt"> cafe </span> { </p>
+                        <p>constructor ( <span class="blueTxt"> eau ,</span> <span class="blueTxt"> cafe , </span> <span class="blueTxt"> sucre , </span> <span class="blueTxt"> tasse </span> ) { </p>
+                        <div class="paramContainer">
+                            <p>this. <span class="blueTxt"> eau </span> = <span class="blueTxt"> eau ;</span> </p>
+                            <p>this. <span class="blueTxt"> cafe </span> = <span class="blueTxt"> cafe ;</span> </p>
+                            <p>this. <span class="blueTxt"> sucre </span> = <span class="blueTxt"> sucre ;</span> </p>
+                            <p>this. <span class="blueTxt"> tasse </span> = <span class="blueTxt"> tasse ;</span> </p>
+                            <p>}}</p>
                         </div>
                         
-                        <p>let <span class="blueTxt"> axelCafe </span> = <span class="redTxt"> new </span> <span class="blueTxt"> cafe </span> ( <span class="blueTxt"> "petit" ,</span> <span class="blueTxt"> 5 , </span> <span class="blueTxt"> true , </span> <span class="blueTxt"> violet </span> ) </p>
-                    </section>
-                    <section id="#esperluette">
-                        <h2>Esperluette</h2>
-                        <div class="definitionEsperluette">
-                            <h3>A quoi sert l'esperluette ?</h3>
-                            <p>Elle permet d'associer une <span class="blueTxt">chaine de caractères</span> et <span class="blueTxt"> des variables </span> sans tous concatener.</p>
-                        </div>
-                        <div>
-                            <p>Exemple :</p>
-                            <p>"Dans Apex je suis ${rank}"</p> 
-                            <p>Si on concatonne</p>   
-                            <p>Dans Apex je suis "+" " " + Rank.</p>                    
-                        </div>                
-                    </section>
-                </article>
-                <section class="sectionTableau">
-                        <h2>Utilisation d'un tableau</h2>
-                        <div>
-                            <div>
-                                <p>Crée un tableau vierge :</p>
-                                <p> <span class="blueTxt"> let </span> <span class="greentxt"> Guest</span> = [] </p>
-                            </div>
-                            <div>
-                                <p>Remplissage du tableau</p>
-                                <p> <span class="blueTxt"> let </span> <span class="greentxt"> Guest</span> = ["sarah","audrey","will"] </p>
-                                <p> <span class="blueTxt"> let </span> <span class="greentxt"> firstGuest</span> = [0]; "sarah"</p>
-                                <p> <span class="blueTxt"> let </span> <span class="greentxt"> firstGuest</span> = [1]; "audrey"</p>
-                                <p> <span class="blueTxt"> let </span> <span class="greentxt"> firstGuest</span> = [5]; "undefined"</p>
-                                <p class="redTxt"> L'indice commence toujours par [0].</p>
-                            </div>
-                        </div>                        
-                    </section>
-                     <section>
-                        <h2>Liaison JS/HTML</h2>
-                        <div>
-                            <p>Le but <span class="blackTxt"> cibler</span> un élément html par : </p>
-                            <p>son <span class="redTxt"> element</span></p>
-                            <p>la <span class="redTxt">.class</span></p>
-                            <p>son<span class="redTxt"> #ID</span></p>                            
-                        </div>
-                        <p>Deux manière de le faire !</p>
-                        <div>
-                            <ul>Document.
-                                <li>getelementbyID <span class="blueTxt">('ID')</span></li> 
-                                <li>getElementbyClass <span class="blueTxt">('class')</span></li>
-                                <li>getElementByTagName <span class="blueTxt">('section')</span></li>                                
-                            </ul>
-                        </div>                
-                        <div>
-                            <ul>document.
-                                <li>getqueryselector <span class="blueTxt">('#ID')</span></li> 
-                                <li>getqueryselector <span class="blueTxt">('.class')</span></li> 
-                                <li>getqueryselector <span class="blueTxt">('section')</span></li> 
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="notationPointe">
-                        <h2>Notation pointée</h2>
-                        <p>Permet d'accorder aux donnés dans un <span class="bluetxt">objet.</span></p>
-                           <p>objet.<span class="blueTxt">parametre</span></p> 
-                           <p class="blackTxt">Exemple :</p>
-                    
-                    <div> 
-                        <p><span class="redTxt">let </span><span class="blueTxt">"café"</span> ={</p>
-                        <p><span class="redTxt">tasse :</span><span class="blueTxt">"violet"</span>,</p>
-                        <p><span class="redTxt">eau :</span><span class="blueTxt">"petit"</span>,</p>
-                        <p><span class="redTxt">lait :</span><span class="blueTxt">"false"</span>,</p>
-                        <p><span class="redTxt">sucre :</span><span class="blueTxt">"true"</span>}</p>
                     </div>
-                    <p><span class="redTxt">let </span><span class="blueTxt">"café"</span> = <span class="blueTxt">cafe.tasse</span> ; (=violet)</p>
-                    <p><span class="redTxt">let </span><span class="blueTxt">"axelcafe"</span> = <span class="blueTxt">new cafe</span> ; ("bleu","petit","true","false",)</p>
-                    <p><span class="redTxt">let </span><span class="blueTxt">"tasse"</span> = <span class="blueTxt">axelcofe.tasse;</span> ; (=bleu)</p>
-                    </section>
+                    
+                    <p>let <span class="blueTxt"> axelCafe </span> = <span class="redTxt"> new </span> <span class="blueTxt"> cafe </span> ( <span class="blueTxt"> "petit" ,</span> <span class="blueTxt"> 5 , </span> <span class="blueTxt"> true , </span> <span class="blueTxt"> violet </span> ) </p>
+                </section>
+                <section id="#esperluette">
+                    <h2>Esperluette</h2>
+                    <div class="definitionEsperluette">
+                        <h3>A quoi sert l'esperluette ?</h3>
+                        <p>Elle permet d'associer une <span class="blueTxt">chaine de caractères</span> et <span class="blueTxt"> des variables </span> sans tous concatener.</p>
+                    </div>
+                    <div>
+                        <p>Exemple :</p>
+                        <p>"Dans Apex je suis ${rank}"</p> 
+                        <p>Si on concatonne</p>   
+                        <p>Dans Apex je suis "+" " " + Rank.</p>                    
+                    </div>                
+                </section>
 
-<!-- boite a outil  -->
-
-                    <section class="inner">
-                        <h2>InnerText, InnerHTML, CreatElement.</h2>
+            <section class="sectionTableau">
+                    <h2>Utilisation d'un tableau</h2>
+                    <div>
                         <div>
-                            <p><span class="blueTxt"> .innertext :</span> Modifie le texte de la balise selectionnée.</p>
-                            <p><span class="blueTxt"> .innerhtml :</span> Modifie l'html dans une balise</p>
-                            <p><span class="blueTxt"> .createlement :</span> Crée une balise après la balise selectionnée.</p>
+                            <p>Crée un tableau vierge :</p>
+                            <p> <span class="blueTxt"> let </span> <span class="greentxt"> Guest</span> = [] </p>
                         </div>
-                    </section>
+                        <div>
+                            <p>Remplissage du tableau</p>
+                            <p> <span class="blueTxt"> let </span> <span class="greentxt"> Guest</span> = ["sarah","audrey","will"] </p>
+                            <p> <span class="blueTxt"> let </span> <span class="greentxt"> firstGuest</span> = [0]; "sarah"</p>
+                            <p> <span class="blueTxt"> let </span> <span class="greentxt"> firstGuest</span> = [1]; "audrey"</p>
+                            <p> <span class="blueTxt"> let </span> <span class="greentxt"> firstGuest</span> = [5]; "undefined"</p>
+                            <p class="redTxt"> L'indice commence toujours par [0].</p>
+                        </div>
+                    </div>                        
+            </section>
+            <section>
+            <h2>Liaison JS/HTML</h2>
+            <div>
+                <p>Le but <span class="blackTxt"> cibler</span> un élément html par : </p>
+                <p>son <span class="redTxt"> element</span></p>
+                <p>la <span class="redTxt">.class</span></p>
+                <p>son<span class="redTxt"> #ID</span></p>                            
+            </div>
+            <p>Deux manière de le faire !</p>
+            <div>
+                <ul>Document.
+                    <li>getelementbyID <span class="blueTxt">('ID')</span></li> 
+                    <li>getElementbyClass <span class="blueTxt">('class')</span></li>
+                    <li>getElementByTagName <span class="blueTxt">('section')</span></li>                                
+                </ul>
+            </div>                
+            <div>
+                <ul>document.
+                    <li>getqueryselector <span class="blueTxt">('#ID')</span></li> 
+                    <li>getqueryselector <span class="blueTxt">('.class')</span></li> 
+                    <li>getqueryselector <span class="blueTxt">('section')</span></li> 
+                </ul>
+            </div>
+            </section>
+            <section class="notationPointe">
+                <h2>Notation pointée</h2>
+                <p>Permet d'accorder aux donnés dans un <span class="bluetxt">objet.</span></p>
+                    <p>objet.<span class="blueTxt">parametre</span></p> 
+                    <p class="blackTxt">Exemple :</p>
+            
+            <div> 
+                <p><span class="redTxt">let </span><span class="blueTxt">"café"</span> ={</p>
+                <p><span class="redTxt">tasse :</span><span class="blueTxt">"violet"</span>,</p>
+                <p><span class="redTxt">eau :</span><span class="blueTxt">"petit"</span>,</p>
+                <p><span class="redTxt">lait :</span><span class="blueTxt">"false"</span>,</p>
+                <p><span class="redTxt">sucre :</span><span class="blueTxt">"true"</span>}</p>
+            </div>
+            <p><span class="redTxt">let </span><span class="blueTxt">"café"</span> = <span class="blueTxt">cafe.tasse</span> ; (=violet)</p>
+            <p><span class="redTxt">let </span><span class="blueTxt">"axelcafe"</span> = <span class="blueTxt">new cafe</span> ; ("bleu","petit","true","false",)</p>
+            <p><span class="redTxt">let </span><span class="blueTxt">"tasse"</span> = <span class="blueTxt">axelcafe.tasse;</span> ; (=bleu)</p>
+            </section>
+        </div>  
+    </article>
+<!-- boite a outil  -->
+    <article class="boiteOutil">
+        <section class="inner">
+            <h2>InnerText, InnerHTML, CreatElement.</h2>
+            <div>
+                <p><span class="blueTxt"> .innertext :</span> Modifie le texte de la balise selectionnée.</p>
+                <p><span class="blueTxt"> .innerhtml :</span> Modifie l'html dans une balise</p>
+                <p><span class="blueTxt"> .createlement :</span> Crée une balise après la balise selectionnée.</p>
+            </div>
+        </section>
+    </article>
+
 
 <!-- logique -->
-                    <section class="sectionCondition">
-                        <h2>Les conditions</h2>
-                        <h3>If/Else</h3>
-                        <div>
-                            <p><span class="blueTxt">If</span> ( <span class="blueTxt">Age </span> < <span class="blueTxt">Age de Majorité</span></p>
-                            <p>Refuser ();</p> 
-                            <p>}Else}</p>
-                            <p>Valider();</p>
-                            <p>Que veux dire cette phrase ?</p>
-                            <p>If = Si</p>
-                            <p>age < age de majorité = <span class="blueTxt">condition</span></p>
-                            <p>Refuser (); = <span class="blueTxt">Fonction a executer</span></p> 
-                            <p>Else = Sinon</p>-
-                            <p>Valider(); = <span class="blueTxt">Fonction a executer</span></p>
-                        </div>
-                        <h3 class="redTxt">Autre possibilité</h3>
-                        <div>
-                            <p>if(condition){</p>
-                            <p> consol.log(true);</p>
-                            <p>}Else{</p>
-                            <p> consol.log(false);</p>
-                            <p>};</p>
-                        </div>
-                    </section>
+    <article class="logique">
+        <section class="sectionCondition">
+            <h2>Les conditions</h2>
+            <h3>If/Else</h3>
+            <div>
+                <p><span class="blueTxt">If</span> ( <span class="blueTxt">Age </span> < <span class="blueTxt">Age de Majorité</span></p>
+                <p>Refuser ();</p> 
+                <p>}Else}</p>
+                <p>Valider();</p>
+                <p>Que veux dire cette phrase ?</p>
+                <p>If = Si</p>
+                <p>age < age de majorité = <span class="blueTxt">condition</span></p>
+                <p>Refuser (); = <span class="blueTxt">Fonction a executer</span></p> 
+                <p>Else = Sinon</p>-
+                <p>Valider(); = <span class="blueTxt">Fonction a executer</span></p>
+            </div>
+            <h3 class="redTxt">Autre possibilité</h3>
+            <div>
+                <p>if(condition){</p>
+                <p> consol.log(true);</p>
+                <p>}Else{</p>
+                <p> consol.log(false);</p>
+                <p>};</p>
+            </div>
+        </section>
+        <section class="sectionBoucle">
+            <h2>Boucle</h2>
+            <p>10 passagers doivent montées crée une boucle <span class="blueTxt"> [for] </span> pour embarqué 1 par 1. </p>
+            <div>
+                <p><span class="blueTxt">Const</span> nombreDePassager = <span class="redTxt">10</span>;</p>
+                <p><span class="blueTxt">for</span> ( <span class="blueTxt">let I</span> = <span class="redTxt">10</span> ; < nombreDePassager;I++){ </p>
+                <p>consol.log(" <span class="blueTxt">Passager Embarqués</span> ");</p>
+            </div>
+        </section>
 
-                    <section class="sectionBoucle">
-                        <h2>Boucle</h2>
-                        <p>10 passagers doivent montées crée une boucle <span class="blueTxt"> [for] </span> pour embarqué 1 par 1. </p>
-                        <div>
-                            <p><span class="blueTxt">Const</span> nombreDePassager = <span class="redTxt">10</span>;</p>
-                            <p><span class="blueTxt">for</span> ( <span class="blueTxt">let I</span> = <span class="redTxt">10</span> ; < nombreDePassager;I++){ </p>
-                            <p>consol.log(" <span class="blueTxt">Passager Embarqués</span> ");</p>
-                        </div>
-                    </section>
-
-                
-
-
-                
-
-        
+    </article>
     </main>
     <footer></footer>
     <link rel="stylesheet" href="../js/coursJS.js">

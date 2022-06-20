@@ -48,3 +48,14 @@ color: red;
 .blueTxt{
     color: blue;
 }
+
+.sectionContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sectionContainer section {
+    width: 22%;
+    margin: 9px ;
+}
