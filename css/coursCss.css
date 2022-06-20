@@ -135,6 +135,7 @@ h2{
     background-color: red;
     display: inline-block;
     padding: 9px;
+    border-radius: 9px;
 }
 
 h3{
@@ -184,4 +185,29 @@ body{
     width: 180px;
 }
 
+#hoverClick{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#hoverClick button{
+    padding: 9px;
+    border: solid 2px red;
+    color: red;
+    border-radius: 9px;
+    margin : 20Px;
+}
+
+
+#hoverClick button:hover{
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border-radius: 9px;
+}
+
+#hoverClick img{
+    width :250px;
+    display: block;
+}
