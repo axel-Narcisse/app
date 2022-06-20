@@ -1,20 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
  
-//boucle JS
-
-let array= ["1=> ","2=> ","3=> ","4=> ","5=> ","6=> ","7",]
-
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    const boucleJs = document.querySelector('.boucleJs');
-
-    let newSpan = document.createElement('span');
-    newSpan.innerText = element;
-    boucleJs.append(newSpan);
-}
-
-
    // ajouter html en Js
 
    class Episode {
@@ -38,19 +24,35 @@ for (let index = 0; index < array.length; index++) {
   
   let episodes = [firstEpisode, secondEpisode];
 
-for(let i = 0; i < 12; i++) {
+  for(let episode of episodes) {
     let newDiv = document.createElement('div');
     newDiv.classList.add('series-frame');
     let newTitle = document.createElement('h2');
-    newTitle.innerText = 'New movie';
+    newTitle.innerText = 'The Story of Tau';
     let newParagraph = document.createElement('p');
-    newParagraph.innerText = `${episodes[i].title}
-  ${episodes[i].duration} minutes
-  ${episodes[i].hasBeenWatched ? 'Already been watched' : 'Not yet watched'}`;
+    newParagraph.innerText = `${episode.title}
+  ${episode.duration} minutes
+  ${episode.hasBeenWatched ? 'Already been watched' : 'Not yet watched'}`;
     newDiv.append(newTitle);
     newDiv.append(newParagraph);
     createlement.append(newDiv);
   }
+
+
+
+
+//boucle JS
+
+let array= ["1=> ","2=> ","3=> ","4=> ","5=> ","6=> ","7",]
+
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    const boucleJs = document.querySelector('.boucleJs');
+
+    let newSpan = document.createElement('span');
+    newSpan.innerText = element;
+    boucleJs.append(newSpan);
+}
 
 
 });

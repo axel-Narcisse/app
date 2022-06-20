@@ -39,3 +39,12 @@
 #checkbox:checked~.line--bottom{
     transform: rotate(-45deg);
 }
+
+
+.boiteOutil .line{
+    background-color: black;
+}
+
+.boiteOutil .hamburger{
+    justify-content: flex-start;
+} 
