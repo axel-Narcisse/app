@@ -55,12 +55,4 @@ for (let index = 0; index < array.length; index++) {
 }
 
 
-// burger Menu
-
-const burger= document.querySelector('#burgerMenuExemple');
-const navBurger= document.querySelector('#burgerMenu nav');
-
-burger.addEventListener('click', function(){
-    navBurger.classList.toggle('hide');
-})
 });

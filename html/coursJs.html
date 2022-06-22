@@ -230,9 +230,9 @@
         <img src="../img/appendJS.PNG" alt="">
 
         <section id="burgerMenu">
-            <h2>burgerMenu</h2>
+            <h2>Menu Tab</h2>
             <label id="burgerMenuExemple" for="checkbox1" class="hamburger">
-                <input type="checkbox" id="checkbox1">
+                <input type="checkbox" id="checkbox1"  onclick="toogleNav()">
                 <span class="line line--top"></span>
                 <span class="line line--middle"></span>
                 <span class="line line--bottom"></span>
@@ -240,10 +240,8 @@
             <nav class="hide">
                 <ul>
                     <li>menu 1</li>
-                    <li>menu 1</li>
-                    <li>menu 1</li>
-                    <li>menu 1</li>
-                    <li>menu 1</li>
+                    <li>menu 2</li>
+                    <li>menu 3</li>
                 </ul>
             </nav>
         </section>
@@ -298,5 +296,14 @@
     </main>
     <footer></footer>
     <script src="../js/coursJS.js"></script>
+    <script>
+    function toogleNav() {
+        const burger= document.querySelector('#burgerMenuExemple');
+        const navBurger= document.querySelector('#burgerMenu nav');
+
+        navBurger.classList.toggle('hide');
+    }   
+
+    </script>
 </body>
 </html>
