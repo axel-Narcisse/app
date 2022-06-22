@@ -1,0 +1,144 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: chocolate;
+    padding: 9px;
+}
+
+header h1{
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.logoPrincipal{
+    text-align: center;
+    padding: 9px;
+    margin: 9px;
+}
+
+#definitionGit{
+    text-align: center;
+}
+
+#definitionGit h2{
+    color: black;
+    font-size: 30px;
+    text-decoration: underline black 12px;
+    padding: 9px;
+    margin: 20px;
+}
+
+
+#definitionGit p{
+    color: blue;
+    font-size: 15px;
+    padding: 9px;
+}
+
+
+#commande h2{
+    color: black;
+    font-size: 30px;
+    text-decoration: underline black 12px;
+    padding: 9px;
+    margin: 20px;
+    text-align: center;
+}
+
+.ContenerCommande{
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 30%;
+    margin: 9px;
+    padding: 9px;
+}
+
+summary {
+    font-weight: bold;
+    margin: 9px 9px 0;
+    padding: 9px;
+}
+
+details[open] {
+    padding: 9px;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 9px;
+}
+
+.commandeGit p{
+    padding: 9px;
+}
+
+
+
+.description{
+    color: blue;
+}
+
+.element{
+    color: red;
+    font-weight: bold;
+}
+
+#branche{
+    text-align: center;
+}
+
+#branche h2{
+    color: black;
+    font-size: 30px;
+    text-decoration: underline black 12px;
+    padding: 9px;
+    margin: 20px;
+    text-align: center;
+}
+
+#branche p{
+    color: blue;
+    font-size: 15px;
+    padding: 9px;
+}
+
+#branche h3{
+    text-align: center;
+}
+
+#commits{
+    text-align: center;
+    padding: 9px;
+}
+
+#commits h2{
+    color: black;
+    font-size: 30px;
+    text-decoration: underline black 12px;
+    padding: 9px;
+    margin: 20px;
+    text-align: center;
+}
+
+#commits p{
+    color: blue;
+    font-size: 15px;
+    padding: 9px;
+}
+
+#commits section{    
+    display: flex;
+    flex-direction: row;
+}
+
+#commits div{
+    width: 31%;
+}
+

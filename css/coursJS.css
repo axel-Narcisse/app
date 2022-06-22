@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: chocolate;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+h2{
+color: red;
+    text-decoration: underline 1px solid red;
+    padding: 9px;
+}
+
+.bigH2{
+    display: flex;
+    justify-content: center; 
+    font-size: 35px;
+    color: chocolate;
+    padding: 9px;   
+    border-radius: 3px ;
+}
+
+.greenTxt{
+    color: green;
+}
+
+.redTxt{
+    color: red;
+}
+
+.blackTxt{
+    color: black;
+}
+
+.blueTxt{
+    color: blue;
+}
+
+.sectionContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sectionContainer section {
+    width: 22%;
+    margin: 9px ;
+}
+
+.hide{
+    display: none;
+}

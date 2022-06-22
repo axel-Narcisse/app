@@ -1,5 +1,5 @@
 
-#checkbox{
+#checkbox , #checkbox1{
     display: none;
 }
 .hamburger{
@@ -27,15 +27,24 @@
     transform: translateY(7px);
 }
 
-#checkbox:checked~.line--top{
+#checkbox:checked~.line--top, #checkbox1:checked~.line--top{
     transform: rotate(45deg);
 }
 
-#checkbox:checked~.line--middle{
+#checkbox:checked~.line--middle, #checkbox1:checked~.line--middle{
     transform: rotate(16px);
     opacity: 0;
 }
 
-#checkbox:checked~.line--bottom{
+#checkbox:checked~.line--bottom,#checkbox1:checked~.line--bottom{
     transform: rotate(-45deg);
 }
+
+
+.boiteOutil .line{
+    background-color: black;
+}
+
+.boiteOutil .hamburger{
+    justify-content: flex-start;
+} 
