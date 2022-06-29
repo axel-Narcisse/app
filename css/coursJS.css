@@ -63,3 +63,12 @@ color: red;
 .hide{
     display: none;
 }
+
+.inner{
+    text-align: center;
+}
+
+.inner h3{
+    padding: 9px;
+    margin: 9px;
+}
