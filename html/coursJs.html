@@ -208,10 +208,11 @@
         </div>  
     </article>
 <!-- boite a outil  -->
+    <h2 class="bigH2">Boite a outil</h2>
     <article class="boiteOutil">
         <section class="inner">
             <h2>InnerText, InnerHTML, CreatElement.</h2>
-            <div>
+            <div class="innerDef">
                 <p>La propriété<span class="blueTxt"> .innertext :</span> Modifie le texte de la balise selectionnée.</p>
                 <p>La propriété<span class="blueTxt"> .innerhtml :</span> Modifie l'html dans une balise</p>
                 <p>La propriété<span class="blueTxt"> .createElement :</span> Crée une balise après la balise selectionnée.</p>
@@ -220,6 +221,7 @@
             <h3>Exemple crée en JS</h3>
 
             <p>Modification d'une balise en utilisant innertext </p>
+           
             <div class="innertext"></div>
 
             <div class="innerhtml"></div>
@@ -227,7 +229,10 @@
             <p>Element ajouter en utilisation une boucle JS , un objet et les propriete append et createElement</p>
             <div class="createlement"></div>
         </section>
-        <img src="../img/appendJS.PNG" alt="">
+
+        <div class="imgCodeJs">
+            <img src="../img/appendJS.PNG" alt="">
+        </div>
 
         <section id="burgerMenu">
             <h2>burgerMenu</h2>
@@ -254,30 +259,33 @@
     <article class="logique">
         <section class="sectionCondition">
             <h2>Les conditions</h2>
-            <h3>If/Else</h3>
-            <div>
-                <p><span class="blueTxt">If</span> ( <span class="blueTxt">Age </span> < <span class="blueTxt">Age de Majorité</span></p>
-                <p>Refuser ();</p> 
-                <p>}Else}</p>
-                <p>Valider();</p>
-                <p>Que veux dire cette phrase ?</p>
-                <p>If = Si</p>
-                <p>age < age de majorité = <span class="blueTxt">condition</span></p>
-                <p>Refuser (); = <span class="blueTxt">Fonction a executer</span></p> 
-                <p>Else = Sinon</p>-
-                <p>Valider(); = <span class="blueTxt">Fonction a executer</span></p>
+            <div class="contenerConditionLogique">
+                <div class="conditionLogique">
+                    <h3 class="redTxt">If/Else</h3>
+                    <p><span class="blueTxt">If</span> ( <span class="blueTxt">Age </span> < <span class="blueTxt">Age de Majorité</span></p>
+                    <p>Refuser ();</p> 
+                    <p>}Else}</p>
+                    <p>Valider();</p>
+                    <p>Que veux dire cette phrase ?</p>
+                    <p>If = Si</p>
+                    <p>age < age de majorité = <span class="blueTxt">condition</span></p>
+                    <p>Refuser (); = <span class="blueTxt">Fonction a executer</span></p> 
+                    <p>Else = Sinon</p>-
+                    <p>Valider(); = <span class="blueTxt">Fonction a executer</span></p>
+                </div>
+                <div class="conditionLogique">
+                    <h3 class="redTxt">Autre possibilité</h3>
+                    <p>if(condition){</p>
+                    <p> console.log(true);</p>
+                    <p>}Else{</p>
+                    <p> console.log(false);</p>
+                    <p>};</p>
+                </div>
+            </div>           
+            <p class="txtCenter">Autre exemple : Est ce que un utilisateur est connecté ?</p>
+            <div class="imgConditionLogique">
+                <img src="../img/if.PNG" alt="">
             </div>
-            <h3 class="redTxt">Autre possibilité</h3>
-            <div>
-                <p>if(condition){</p>
-                <p> console.log(true);</p>
-                <p>}Else{</p>
-                <p> console.log(false);</p>
-                <p>};</p>
-            </div>
-
-            <p>Autre exemple : Est ce que un utilisateur est connecté ?</p>
-            <img src="../img/if.PNG" alt="">
         </section>
 
        
@@ -289,7 +297,7 @@
                 <p><span class="blueTxt">for</span> ( <span class="blueTxt">let I</span> = <span class="redTxt">10</span> ; < nombreDePassager;I++){ </p>
                 <p>console.log(" <span class="blueTxt">Passager Embarqués</span> ");</p>
             </div>
-            <h3>Exempls de boucle</h3>
+            <h3>Exemple de boucle</h3>
             <div class="boucleJs"></div>
             <img src="../img/boucle.PNG" alt="">
         </section>
