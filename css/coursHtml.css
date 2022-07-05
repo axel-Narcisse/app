@@ -141,3 +141,15 @@ details[open] summary {
 .elementDescriptionHtml p{
     padding: 9px;
 }
+
+.centerTxt{
+    text-align: center;
+    margin: 9px;
+    padding: 9px;
+}
+
+#ancrage p{
+    text-align: center;
+    padding: 9px;
+    margin: 9px;
+}
