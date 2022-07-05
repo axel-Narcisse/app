@@ -49,6 +49,10 @@ color: red;
     color: blue;
 }
 
+.txtCenter{
+    text-align: center;
+}
+
 .sectionContainer{
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +111,20 @@ color: red;
 
 .imgConditionLogique{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+}
+
+
+.sectionCondition h2{
+    text-align: center;
+}
+
+.sectionBoucle{
+    text-align: center;
+    padding: 9px;
+    margin: 9px;
+}
+
+.sectionBoucle *{
+    padding: 9px;
 }
