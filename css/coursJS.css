@@ -72,3 +72,41 @@ color: red;
     padding: 9px;
     margin: 9px;
 }
+
+.createlement{
+    display: flex;
+    justify-content: space-around;
+    padding: 9px;
+    margin: 9px;
+}
+
+.imgCodeJs{
+    display: flex;
+    justify-content: center;
+}
+
+#burgerMenu{
+    display: flex;
+    justify-content: center;
+    padding: 9px;
+    margin: 9px;
+}
+
+.conditionLogique{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenerConditionLogique{
+    display: flex;
+    justify-content: space-around;
+    padding: 9px;
+    margin: 9px;
+}
+
+.imgConditionLogique{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
