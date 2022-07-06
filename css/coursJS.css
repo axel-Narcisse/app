@@ -8,11 +8,12 @@ header{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background: chocolate;
+    background: coral;
     color: white;
     padding: 20px 0;
     margin-bottom: 20px;
 }
+
 
 nav ul{
     list-style: none;
