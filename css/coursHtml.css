@@ -8,7 +8,11 @@ header{
     justify-content: space-around;
     align-items: center;
     background: coral;
-    padding: 9px;
+    padding: 20px;
+}
+
+body{
+    padding: 18px;
 }
 
 h1{

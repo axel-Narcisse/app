@@ -9,8 +9,12 @@ header{
 header h1{
     text-transform: uppercase;
     color: white;
+    padding: 20px;
 }
 
+body{
+    padding: 18px;
+}
 
 .logoPrincipal{
     text-align: center;

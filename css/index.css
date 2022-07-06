@@ -11,6 +11,9 @@ header{
     margin-bottom: 20px;
 }
 
+body{
+    padding: 18px;
+}
 
 h1{
     text-transform: uppercase;
